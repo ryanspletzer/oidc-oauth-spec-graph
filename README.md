@@ -42,6 +42,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 7591** - Dynamic Client Registration: Allows clients to register themselves with authorization servers
 - **RFC 7592** - Dynamic Client Registration Management Protocol: Defines how clients can manage their dynamically registered OAuth 2.0 client configurations
 - **RFC 8414** - Authorization Server Metadata: Standardizes discovery of authorization server capabilities
+- **RFC 8693** - OAuth 2.0 Token Exchange: Defines a protocol for exchanging security tokens, enabling delegation and impersonation scenarios
 - **OAuth 2.0 Multiple Response Type Encoding Practices**: Defines encoding for multiple response types in OAuth 2.0 authorization responses
 
 ### JOSE/JWT Security

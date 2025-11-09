@@ -21,6 +21,7 @@ graph LR
     RFC7591["Dynamic Client Registration (RFC 7591)"]
     RFC7592["Dynamic Client Registration Management (RFC 7592)"]
     RFC8414["Authorization Server Metadata (RFC 8414)"]
+    RFC8693["OAuth 2.0 Token Exchange (RFC 8693)"]
     OAuth2_MultiResp["OAuth 2.0 Multiple Response Type Encoding Practices"]
   end
 
@@ -57,6 +58,8 @@ graph LR
   RFC7592 --> RFC7591
   RFC8414 --> RFC6749
   RFC8414 --> RFC7591
+  RFC8693 --> RFC6749
+  RFC8693 --> RFC6750
   OAuth2_MultiResp --> RFC6749
 
   %% ---- Edges: OIDC depending on OAuth / JWT ----
@@ -118,6 +121,7 @@ graph LR
   click RFC7591 "https://datatracker.ietf.org/doc/html/rfc7591" "Dynamic Client Registration (RFC 7591)"
   click RFC7592 "https://datatracker.ietf.org/doc/html/rfc7592" "Dynamic Client Registration Management (RFC 7592)"
   click RFC8414 "https://datatracker.ietf.org/doc/html/rfc8414" "Authorization Server Metadata (RFC 8414)"
+  click RFC8693 "https://datatracker.ietf.org/doc/html/rfc8693" "OAuth 2.0 Token Exchange (RFC 8693)"
   click OAuth2_MultiResp "https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html" "OAuth 2.0 Multiple Response Type Encoding Practices"
 
   click RFC7515 "https://datatracker.ietf.org/doc/html/rfc7515" "JSON Web Signature (JWS) (RFC 7515)"
