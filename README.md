@@ -1,6 +1,6 @@
 # OpenID Connect and OAuth Specification Graph
 
-This repository contains a visual representation of the relationships between OpenID Connect, OAuth 2.0, and related specifications including JWT (JSON Web Token) and JOSE (JSON Web Signature/Encryption) standards.
+This repository contains a visual representation of the relationships between OpenID Connect, OAuth 2.0, and related specifications including JWT (JSON Web Token) and JOSE (JSON Web Signature/Encryption) standards and more.
 
 ## Specification Graph
 
@@ -17,6 +17,7 @@ The diagram shows the dependency relationships between:
 - **OAuth 2.0 RFCs**: Core authorization framework and extensions
 - **JOSE/JWT Standards**: Cryptographic foundations for secure tokens
 - **OpenID Connect**: Identity layer built on top of OAuth 2.0
+- **UMA (User-Managed Access)**: User-controlled authorization for resource sharing
 
 Each node in the graph is clickable and links directly to the official specification document.
 
@@ -45,6 +46,11 @@ Each node in the graph is clickable and links directly to the official specifica
 - **OpenID Connect Discovery 1.0**: Mechanism for discovering OpenID Connect provider configuration
 - **OpenID Connect Dynamic Client Registration 1.0**: Extension for dynamic client registration in OIDC context
 
+### UMA (User-Managed Access)
+
+- **UMA 2.0 Grant for OAuth 2.0**: Defines an OAuth grant type for party-to-party authorization
+- **UMA 2.0 Federated Authorization**: Profile for federated authorization using UMA, enabling users to control access to their resources
+
 ## Understanding the Dependencies
 
 The arrows in the diagram show how specifications build upon each other:
@@ -52,7 +58,8 @@ The arrows in the diagram show how specifications build upon each other:
 1. **OAuth 2.0 Forms the Base**: Most specifications extend or reference RFC 6749
 2. **JOSE Provides Cryptographic Foundations**: JWT and related specs depend on JOSE for security
 3. **OpenID Connect Builds on Both**: OIDC uses OAuth 2.0 for authorization and JWT for identity tokens
-4. **Modern Extensions**: Newer specifications like RFC 9068 integrate multiple existing standards
+4. **UMA Extends OAuth for User-Controlled Authorization**: UMA builds on OAuth 2.0 and Bearer tokens to enable party-to-party resource sharing
+5. **Modern Extensions**: Newer specifications like RFC 9068 integrate multiple existing standards
 
 ## Usage
 

@@ -28,6 +28,12 @@ graph LR
     OIDC_Reg["OpenID Connect Dynamic Client Registration 1.0"]
   end
 
+  %% --- UMA (User-Managed Access) ---
+  subgraph UMA
+    UMA_Grant["UMA 2.0 Grant for OAuth 2.0"]
+    UMA_FedAuthz["UMA 2.0 Federated Authorization"]
+  end
+
   %% ---- Edges: OAuth 2.0 internal references ----
   RFC6750 --> RFC6749
   RFC7636 --> RFC6749
@@ -70,6 +76,13 @@ graph LR
   RFC9068 --> OIDC_Core
   RFC9068 --> OIDC_Discovery
 
+  %% ---- Edges: UMA depending on OAuth / JWT ----
+  UMA_Grant --> RFC6749
+  UMA_Grant --> RFC6750
+  UMA_FedAuthz --> RFC6749
+  UMA_FedAuthz --> RFC6750
+  UMA_FedAuthz --> UMA_Grant
+
   %% ---- Clickable links for each node ----
   click RFC6749 "https://datatracker.ietf.org/doc/html/rfc6749" "OAuth 2.0 Authorization Framework (RFC 6749)"
   click RFC6750 "https://datatracker.ietf.org/doc/html/rfc6750" "Bearer Token Usage (RFC 6750)"
@@ -87,4 +100,7 @@ graph LR
   click OIDC_Core "https://openid.net/specs/openid-connect-core-1_0.html" "OpenID Connect Core 1.0"
   click OIDC_Discovery "https://openid.net/specs/openid-connect-discovery-1_0.html" "OpenID Connect Discovery 1.0"
   click OIDC_Reg "https://openid.net/specs/openid-connect-registration-1_0.html" "OpenID Connect Dynamic Client Registration 1.0"
+
+  click UMA_Grant "https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-grant-2.0.html" "UMA 2.0 Grant for OAuth 2.0"
+  click UMA_FedAuthz "https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-federated-authz-2.0.html" "UMA 2.0 Federated Authorization"
 ```
