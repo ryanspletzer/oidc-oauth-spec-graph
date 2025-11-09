@@ -2,6 +2,10 @@
 
 This repository contains a visual representation of the relationships between OpenID Connect, OAuth 2.0, and related specifications including JWT (JSON Web Token) and JOSE (JSON Web Signature/Encryption) standards.
 
+## Specification Graph
+
+See [Graph.md](Graph.md) and expand the graph to browse more easily.
+
 ## Overview
 
 The modern web authentication and authorization ecosystem is built on a foundation of interconnected specifications. Understanding how these specifications relate to and depend on each other is crucial for developers implementing secure authentication systems. This diagram visualizes these relationships in an easy-to-understand format.
@@ -15,10 +19,6 @@ The diagram shows the dependency relationships between:
 - **OpenID Connect**: Identity layer built on top of OAuth 2.0
 
 Each node in the graph is clickable and links directly to the official specification document.
-
-## Specification Graph
-
-See [Graph.md](Graph.md).
 
 ## Specification Categories
 
