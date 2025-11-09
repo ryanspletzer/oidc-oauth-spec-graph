@@ -61,6 +61,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **OAuth 2.0 Attestation-Based Client Authentication (Draft)**: Enables client instances to authenticate using attestations bound to client instance keys, supporting both traditional and platform-specific attestation mechanisms
 - **OAuth 2.0 for Browser-Based Applications (Draft)**: Best practices and security considerations for OAuth 2.0 applications running entirely in the browser, including guidance on using authorization code flow with PKCE
 - **Encoding claims in the OAuth 2 state parameter using a JWT (Draft)**: Defines how to encode claims in the OAuth 2.0 state parameter as a JWT, enabling secure passing of additional information between authorization request and response
+- **User-Managed Access (UMA) Profile of OAuth 2.0 (Draft)**: Defines an OAuth-based access management protocol that enables resource owners to control access to their protected resources by creating authorization policies at an authorization server
 
 ### JOSE/JWT Security
 
