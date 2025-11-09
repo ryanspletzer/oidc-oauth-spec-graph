@@ -11,6 +11,8 @@ Mermaid chart viewer.
 
 The modern web authentication and authorization ecosystem is built on a foundation of interconnected specifications. Understanding how these specifications relate to and depend on each other is crucial for developers implementing secure authentication systems. This diagram visualizes these relationships in an easy-to-understand format.
 
+**Why does this project exist?** Read more about the [motivation behind this project](docs/motivation.md).
+
 ## What's Included
 
 The diagram shows the dependency relationships between:
