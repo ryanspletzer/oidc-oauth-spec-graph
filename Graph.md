@@ -1,7 +1,7 @@
 # OpenID Connect and OAuth Specification Graph
 
 ```mermaid
-graph TD
+graph LR
 
   %% --- OpenID Connect ---
   subgraph OpenID_Connect
