@@ -1,10 +1,13 @@
+# OpenID Connect and OAuth Specification Graph
 
 ```mermaid
 graph LR
 
-  %% --- Discovery / Metadata ---
-  subgraph Discovery_Metadata
-    RFC7033["WebFinger (RFC 7033)"]
+  %% --- OpenID Connect ---
+  subgraph OpenID_Connect
+    OIDC_Core["OpenID Connect Core 1.0"]
+    OIDC_Discovery["OpenID Connect Discovery 1.0"]
+    OIDC_Reg["OpenID Connect Dynamic Client Registration 1.0"]
   end
 
   %% --- OAuth 2.0 RFCs ---
@@ -29,11 +32,9 @@ graph LR
     RFC9068["JWT Profile for OAuth 2.0 Access Tokens (RFC 9068)"]
   end
 
-  %% --- OpenID Connect ---
-  subgraph OpenID_Connect
-    OIDC_Core["OpenID Connect Core 1.0"]
-    OIDC_Discovery["OpenID Connect Discovery 1.0"]
-    OIDC_Reg["OpenID Connect Dynamic Client Registration 1.0"]
+  %% --- Discovery / Metadata ---
+  subgraph Discovery_Metadata
+    RFC7033["WebFinger (RFC 7033)"]
   end
 
   %% --- UMA (User-Managed Access) ---
