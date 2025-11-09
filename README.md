@@ -36,6 +36,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 7523** - JWT Profile for OAuth 2.0 Client Authentication and Authorization Grants: Defines how JWTs can be used for client authentication and authorization grants
 - **RFC 7636** - PKCE: Proof Key for Code Exchange, security extension for public clients
 - **RFC 7591** - Dynamic Client Registration: Allows clients to register themselves with authorization servers
+- **RFC 7592** - Dynamic Client Registration Management Protocol: Defines how clients can manage their dynamically registered OAuth 2.0 client configurations
 - **RFC 8414** - Authorization Server Metadata: Standardizes discovery of authorization server capabilities
 - **OAuth 2.0 Multiple Response Type Encoding Practices**: Defines encoding for multiple response types in OAuth 2.0 authorization responses
 
