@@ -37,6 +37,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **OAuth 2.1 Authorization Framework (Draft)**: Consolidates OAuth 2.0 and related best practices into a single document, mandating PKCE, eliminating implicit flow, and incorporating security improvements from RFC 8252
 - **RFC 6750** - Bearer Token Usage: Defines how to use bearer tokens in HTTP requests
 - **RFC 6819** - OAuth 2.0 Threat Model and Security Considerations: Comprehensive analysis of OAuth 2.0 security threats and countermeasures
+- **RFC 7009** - OAuth 2.0 Token Revocation: Defines a mechanism for clients to notify authorization servers that a token is no longer needed
 - **RFC 7521** - Assertion Framework for OAuth 2.0 Client Authentication and Authorization Grants: Common framework for using assertions with OAuth 2.0
 - **RFC 7522** - SAML 2.0 Profile for OAuth 2.0: Defines how SAML 2.0 assertions can be used for client authentication and authorization grants
 - **RFC 7523** - JWT Profile for OAuth 2.0 Client Authentication and Authorization Grants: Defines how JWTs can be used for client authentication and authorization grants
@@ -55,7 +56,6 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 9396** - OAuth 2.0 Rich Authorization Requests: Enables clients to specify fine-grained authorization data using structured syntax for complex authorization scenarios
 - **RFC 9449** - OAuth 2.0 Demonstrating Proof of Possession (DPoP): Mechanism for sender-constraining OAuth tokens using proof-of-possession at the application layer
 - **RFC 9470** - OAuth 2.0 Step Up Authentication Challenge Protocol: Defines a mechanism for resource servers to signal to clients that additional authentication is required to access protected resources
-- **RFC 9700** - OAuth 2.0 Token Revocation: Defines a mechanism for clients to notify authorization servers that a token is no longer needed
 - **OAuth 2.0 Multiple Response Type Encoding Practices**: Defines encoding for multiple response types in OAuth 2.0 authorization responses
 - **OAuth 2.0 Attestation-Based Client Authentication (Draft)**: Enables client instances to authenticate using attestations bound to client instance keys, supporting both traditional and platform-specific attestation mechanisms
 - **OAuth 2.0 for Browser-Based Applications (Draft)**: Best practices and security considerations for OAuth 2.0 applications running entirely in the browser, including guidance on using authorization code flow with PKCE
