@@ -41,6 +41,7 @@ graph LR
     RFC7517["JSON Web Key (JWK) (RFC 7517)"]
     RFC7518["JSON Web Algorithms (JWA) (RFC 7518)"]
     RFC7519["JSON Web Token (JWT) (RFC 7519)"]
+    RFC8725["JSON Web Token Best Current Practices (RFC 8725)"]
     RFC9068["JWT Profile for OAuth 2.0 Access Tokens (RFC 9068)"]
     RFC9728["JWT Profile for OAuth 2.0 Authorization Server Issuer Identification (RFC 9728)"]
   end
@@ -113,6 +114,10 @@ graph LR
   RFC7519 --> RFC7517
   RFC7519 --> RFC7518
 
+  RFC8725 --> RFC7519
+  RFC8725 --> RFC7515
+  RFC8725 --> RFC7516
+
   %% ---- Edges: newer JWT/OAuth profile referencing others ----
   RFC9068 --> RFC6749
   RFC9068 --> RFC6750
@@ -160,6 +165,7 @@ graph LR
   click RFC7517 "https://datatracker.ietf.org/doc/html/rfc7517" "JSON Web Key (JWK) (RFC 7517)"
   click RFC7518 "https://datatracker.ietf.org/doc/html/rfc7518" "JSON Web Algorithms (JWA) (RFC 7518)"
   click RFC7519 "https://datatracker.ietf.org/doc/html/rfc7519" "JSON Web Token (JWT) (RFC 7519)"
+  click RFC8725 "https://datatracker.ietf.org/doc/html/rfc8725" "JSON Web Token Best Current Practices (RFC 8725)"
   click RFC9068 "https://datatracker.ietf.org/doc/html/rfc9068" "JWT Profile for OAuth 2.0 Access Tokens (RFC 9068)"
   click RFC9728 "https://datatracker.ietf.org/doc/html/rfc9728" "JWT Profile for OAuth 2.0 Authorization Server Issuer Identification (RFC 9728)"
 
