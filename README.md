@@ -4,7 +4,8 @@ This repository contains a visual representation of the relationships between Op
 
 ## Specification Graph
 
-See [Graph.md](Graph.md) and expand the graph to browse more easily.
+See [graph.md](graph.md) and expand the graph in GitHub to browse more easily, or view the graph code in your preferred
+Mermaid chart viewer.
 
 ## Overview
 
