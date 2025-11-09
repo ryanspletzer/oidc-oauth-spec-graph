@@ -14,6 +14,7 @@ The modern web authentication and authorization ecosystem is built on a foundati
 
 The diagram shows the dependency relationships between:
 
+- **Discovery and Metadata**: Resource discovery protocols
 - **OAuth 2.0 RFCs**: Core authorization framework and extensions
 - **JOSE/JWT Standards**: Cryptographic foundations for secure tokens
 - **OpenID Connect**: Identity layer built on top of OAuth 2.0
@@ -22,6 +23,10 @@ The diagram shows the dependency relationships between:
 Each node in the graph is clickable and links directly to the official specification document.
 
 ## Specification Categories
+
+### Discovery and Metadata
+
+- **RFC 7033** - WebFinger: Protocol for discovering information about people and resources, used by OpenID Connect Discovery
 
 ### OAuth 2.0 Foundation
 

@@ -2,6 +2,11 @@
 ```mermaid
 graph LR
 
+  %% --- Discovery / Metadata ---
+  subgraph Discovery_Metadata
+    RFC7033["WebFinger (RFC 7033)"]
+  end
+
   %% --- OAuth 2.0 RFCs ---
   subgraph OAuth_2_0_RFCs
     RFC6749["OAuth 2.0 Authorization Framework (RFC 6749)"]
@@ -54,6 +59,7 @@ graph LR
 
   OIDC_Discovery --> RFC6749
   OIDC_Discovery --> RFC8414
+  OIDC_Discovery --> RFC7033
 
   OIDC_Reg --> RFC6749
   %% RFC 7591 explicitly references OIDC Dynamic Client Registration
@@ -91,6 +97,8 @@ graph LR
   UMA_FedAuthz --> UMA_Grant
 
   %% ---- Clickable links for each node ----
+  click RFC7033 "https://datatracker.ietf.org/doc/html/rfc7033" "WebFinger (RFC 7033)"
+
   click RFC6749 "https://datatracker.ietf.org/doc/html/rfc6749" "OAuth 2.0 Authorization Framework (RFC 6749)"
   click RFC6750 "https://datatracker.ietf.org/doc/html/rfc6750" "Bearer Token Usage (RFC 6750)"
   click RFC7522 "https://datatracker.ietf.org/doc/html/rfc7522" "SAML 2.0 Profile for OAuth 2.0 (RFC 7522)"
