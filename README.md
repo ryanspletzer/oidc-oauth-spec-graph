@@ -56,6 +56,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 9470** - OAuth 2.0 Step Up Authentication Challenge Protocol: Defines a mechanism for resource servers to signal to clients that additional authentication is required to access protected resources
 - **RFC 9700** - OAuth 2.0 Token Revocation: Defines a mechanism for clients to notify authorization servers that a token is no longer needed
 - **OAuth 2.0 Multiple Response Type Encoding Practices**: Defines encoding for multiple response types in OAuth 2.0 authorization responses
+- **OAuth 2.0 Attestation-Based Client Authentication (Draft)**: Enables client instances to authenticate using attestations bound to client instance keys, supporting both traditional and platform-specific attestation mechanisms
 
 ### JOSE/JWT Security
 

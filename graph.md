@@ -35,6 +35,7 @@ graph LR
     RFC9470["OAuth 2.0 Step Up Authentication Challenge Protocol (RFC 9470)"]
     RFC9700["OAuth 2.0 Token Revocation (RFC 9700)"]
     OAuth2_MultiResp["OAuth 2.0 Multiple Response Type Encoding Practices"]
+    OAuth2_AttestAuth["OAuth 2.0 Attestation-Based Client Authentication (Draft)"]
   end
 
   %% --- JOSE / JWT ---
@@ -92,6 +93,8 @@ graph LR
   RFC9470 --> RFC6750
   RFC9700 --> RFC6749
   OAuth2_MultiResp --> RFC6749
+  OAuth2_AttestAuth --> RFC6749
+  OAuth2_AttestAuth --> RFC7519
 
   %% ---- Edges: OIDC depending on OAuth / JWT ----
   OIDC_Core --> RFC6749
@@ -170,6 +173,7 @@ graph LR
   click RFC9470 "https://datatracker.ietf.org/doc/html/rfc9470" "OAuth 2.0 Step Up Authentication Challenge Protocol (RFC 9470)"
   click RFC9700 "https://datatracker.ietf.org/doc/html/rfc9700" "OAuth 2.0 Token Revocation (RFC 9700)"
   click OAuth2_MultiResp "https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html" "OAuth 2.0 Multiple Response Type Encoding Practices"
+  click OAuth2_AttestAuth "https://datatracker.ietf.org/doc/draft-ietf-oauth-attestation-based-client-auth/" "OAuth 2.0 Attestation-Based Client Authentication (Draft)"
 
   click RFC7515 "https://datatracker.ietf.org/doc/html/rfc7515" "JSON Web Signature (JWS) (RFC 7515)"
   click RFC7516 "https://datatracker.ietf.org/doc/html/rfc7516" "JSON Web Encryption (JWE) (RFC 7516)"
