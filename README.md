@@ -18,7 +18,7 @@ Each node in the graph is clickable and links directly to the official specifica
 
 ## Specification Graph
 
-See [Graph.md].
+See [Graph.md](Graph.md).
 
 ## Specification Categories
 
