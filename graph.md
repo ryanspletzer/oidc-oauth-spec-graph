@@ -14,6 +14,7 @@ graph LR
   subgraph OAuth_2_0_RFCs
     RFC6749["OAuth 2.0 Authorization Framework (RFC 6749)"]
     RFC6750["Bearer Token Usage (RFC 6750)"]
+    RFC6819["OAuth 2.0 Threat Model and Security Considerations (RFC 6819)"]
     RFC7521["Assertion Framework for OAuth 2.0 (RFC 7521)"]
     RFC7522["SAML 2.0 Profile for OAuth 2.0 (RFC 7522)"]
     RFC7523["JWT Profile for OAuth 2.0 Client Authentication and Authorization Grants (RFC 7523)"]
@@ -56,6 +57,8 @@ graph LR
 
   %% ---- Edges: OAuth 2.0 internal references ----
   RFC6750 --> RFC6749
+  RFC6819 --> RFC6749
+  RFC6819 --> RFC6750
   RFC7521 --> RFC6749
   RFC7522 --> RFC7521
   RFC7523 --> RFC7521
@@ -131,6 +134,7 @@ graph LR
 
   click RFC6749 "https://datatracker.ietf.org/doc/html/rfc6749" "OAuth 2.0 Authorization Framework (RFC 6749)"
   click RFC6750 "https://datatracker.ietf.org/doc/html/rfc6750" "Bearer Token Usage (RFC 6750)"
+  click RFC6819 "https://datatracker.ietf.org/doc/html/rfc6819" "OAuth 2.0 Threat Model and Security Considerations (RFC 6819)"
   click RFC7521 "https://datatracker.ietf.org/doc/html/rfc7521" "Assertion Framework for OAuth 2.0 (RFC 7521)"
   click RFC7522 "https://datatracker.ietf.org/doc/html/rfc7522" "SAML 2.0 Profile for OAuth 2.0 (RFC 7522)"
   click RFC7523 "https://datatracker.ietf.org/doc/html/rfc7523" "JWT Profile for OAuth 2.0 Client Authentication and Authorization Grants (RFC 7523)"
