@@ -53,6 +53,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 9207** - OAuth 2.0 Authorization Server Issuer Identification: Provides a mechanism to prevent mix-up attacks by requiring authorization servers to identify themselves in authorization responses
 - **RFC 9396** - OAuth 2.0 Rich Authorization Requests: Enables clients to specify fine-grained authorization data using structured syntax for complex authorization scenarios
 - **RFC 9449** - OAuth 2.0 Demonstrating Proof of Possession (DPoP): Mechanism for sender-constraining OAuth tokens using proof-of-possession at the application layer
+- **RFC 9470** - OAuth 2.0 Step Up Authentication Challenge Protocol: Defines a mechanism for resource servers to signal to clients that additional authentication is required to access protected resources
 - **RFC 9700** - OAuth 2.0 Token Revocation: Defines a mechanism for clients to notify authorization servers that a token is no longer needed
 - **OAuth 2.0 Multiple Response Type Encoding Practices**: Defines encoding for multiple response types in OAuth 2.0 authorization responses
 

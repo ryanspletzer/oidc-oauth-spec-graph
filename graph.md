@@ -32,6 +32,7 @@ graph LR
     RFC9207["OAuth 2.0 Authorization Server Issuer Identification (RFC 9207)"]
     RFC9396["OAuth 2.0 Rich Authorization Requests (RFC 9396)"]
     RFC9449["OAuth 2.0 Demonstrating Proof of Possession (RFC 9449)"]
+    RFC9470["OAuth 2.0 Step Up Authentication Challenge Protocol (RFC 9470)"]
     RFC9700["OAuth 2.0 Token Revocation (RFC 9700)"]
     OAuth2_MultiResp["OAuth 2.0 Multiple Response Type Encoding Practices"]
   end
@@ -87,6 +88,8 @@ graph LR
   RFC9396 --> RFC6749
   RFC9449 --> RFC6749
   RFC9449 --> RFC7519
+  RFC9470 --> RFC6749
+  RFC9470 --> RFC6750
   RFC9700 --> RFC6749
   OAuth2_MultiResp --> RFC6749
 
@@ -164,6 +167,7 @@ graph LR
   click RFC9207 "https://datatracker.ietf.org/doc/html/rfc9207" "OAuth 2.0 Authorization Server Issuer Identification (RFC 9207)"
   click RFC9396 "https://datatracker.ietf.org/doc/html/rfc9396" "OAuth 2.0 Rich Authorization Requests (RFC 9396)"
   click RFC9449 "https://datatracker.ietf.org/doc/html/rfc9449" "OAuth 2.0 Demonstrating Proof of Possession (RFC 9449)"
+  click RFC9470 "https://datatracker.ietf.org/doc/html/rfc9470" "OAuth 2.0 Step Up Authentication Challenge Protocol (RFC 9470)"
   click RFC9700 "https://datatracker.ietf.org/doc/html/rfc9700" "OAuth 2.0 Token Revocation (RFC 9700)"
   click OAuth2_MultiResp "https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html" "OAuth 2.0 Multiple Response Type Encoding Practices"
 
