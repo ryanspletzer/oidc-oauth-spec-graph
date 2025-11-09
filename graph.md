@@ -13,6 +13,7 @@ graph LR
   %% --- OAuth 2.0 RFCs ---
   subgraph OAuth_2_0_RFCs
     RFC6749["OAuth 2.0 Authorization Framework (RFC 6749)"]
+    OAuth2_1["OAuth 2.1 Authorization Framework (Draft)"]
     RFC6750["Bearer Token Usage (RFC 6750)"]
     RFC6819["OAuth 2.0 Threat Model and Security Considerations (RFC 6819)"]
     RFC7521["Assertion Framework for OAuth 2.0 (RFC 7521)"]
@@ -63,6 +64,9 @@ graph LR
   end
 
   %% ---- Edges: OAuth 2.0 internal references ----
+  OAuth2_1 --> RFC6749
+  OAuth2_1 --> RFC7636
+  OAuth2_1 --> RFC8252
   RFC6750 --> RFC6749
   RFC6819 --> RFC6749
   RFC6819 --> RFC6750
@@ -154,6 +158,7 @@ graph LR
   click RFC7033 "https://datatracker.ietf.org/doc/html/rfc7033" "WebFinger (RFC 7033)"
 
   click RFC6749 "https://datatracker.ietf.org/doc/html/rfc6749" "OAuth 2.0 Authorization Framework (RFC 6749)"
+  click OAuth2_1 "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1" "OAuth 2.1 Authorization Framework (Draft)"
   click RFC6750 "https://datatracker.ietf.org/doc/html/rfc6750" "Bearer Token Usage (RFC 6750)"
   click RFC6819 "https://datatracker.ietf.org/doc/html/rfc6819" "OAuth 2.0 Threat Model and Security Considerations (RFC 6819)"
   click RFC7521 "https://datatracker.ietf.org/doc/html/rfc7521" "Assertion Framework for OAuth 2.0 (RFC 7521)"
