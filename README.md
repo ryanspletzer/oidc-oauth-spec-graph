@@ -27,6 +27,7 @@ Each node in the graph is clickable and links directly to the official specifica
 
 - **RFC 6749** - OAuth 2.0 Authorization Framework: The core OAuth 2.0 specification
 - **RFC 6750** - Bearer Token Usage: Defines how to use bearer tokens in HTTP requests
+- **RFC 7522** - SAML 2.0 Profile for OAuth 2.0: Defines how SAML 2.0 assertions can be used for client authentication and authorization grants
 - **RFC 7636** - PKCE: Proof Key for Code Exchange, security extension for public clients
 - **RFC 7591** - Dynamic Client Registration: Allows clients to register themselves with authorization servers
 - **RFC 8414** - Authorization Server Metadata: Standardizes discovery of authorization server capabilities
