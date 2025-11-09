@@ -26,6 +26,7 @@ graph LR
     RFC8628["OAuth 2.0 Device Authorization Grant (RFC 8628)"]
     RFC8693["OAuth 2.0 Token Exchange (RFC 8693)"]
     RFC8705["OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC 8705)"]
+    RFC8707["OAuth 2.0 Resource Indicators (RFC 8707)"]
     RFC9126["OAuth 2.0 Pushed Authorization Requests (RFC 9126)"]
     RFC9207["OAuth 2.0 Authorization Server Issuer Identification (RFC 9207)"]
     RFC9449["OAuth 2.0 Demonstrating Proof of Possession (RFC 9449)"]
@@ -75,6 +76,7 @@ graph LR
   RFC8693 --> RFC6750
   RFC8705 --> RFC6749
   RFC8705 --> RFC6750
+  RFC8707 --> RFC6749
   RFC9126 --> RFC6749
   RFC9207 --> RFC6749
   RFC9449 --> RFC6749
@@ -146,6 +148,7 @@ graph LR
   click RFC8628 "https://datatracker.ietf.org/doc/html/rfc8628" "OAuth 2.0 Device Authorization Grant (RFC 8628)"
   click RFC8693 "https://datatracker.ietf.org/doc/html/rfc8693" "OAuth 2.0 Token Exchange (RFC 8693)"
   click RFC8705 "https://datatracker.ietf.org/doc/html/rfc8705" "OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC 8705)"
+  click RFC8707 "https://datatracker.ietf.org/doc/html/rfc8707" "OAuth 2.0 Resource Indicators (RFC 8707)"
   click RFC9126 "https://datatracker.ietf.org/doc/html/rfc9126" "OAuth 2.0 Pushed Authorization Requests (RFC 9126)"
   click RFC9207 "https://datatracker.ietf.org/doc/html/rfc9207" "OAuth 2.0 Authorization Server Issuer Identification (RFC 9207)"
   click RFC9449 "https://datatracker.ietf.org/doc/html/rfc9449" "OAuth 2.0 Demonstrating Proof of Possession (RFC 9449)"

@@ -47,6 +47,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 8628** - OAuth 2.0 Device Authorization Grant: Defines an OAuth grant type for browserless and input-constrained devices
 - **RFC 8693** - OAuth 2.0 Token Exchange: Defines a protocol for exchanging security tokens, enabling delegation and impersonation scenarios
 - **RFC 8705** - OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens: Defines mutual TLS for client authentication and methods for binding access tokens to client certificates
+- **RFC 8707** - OAuth 2.0 Resource Indicators: Allows clients to specify target resource servers when requesting access tokens
 - **RFC 9126** - OAuth 2.0 Pushed Authorization Requests: Allows clients to push authorization request parameters directly to the authorization server before redirecting the user
 - **RFC 9207** - OAuth 2.0 Authorization Server Issuer Identification: Provides a mechanism to prevent mix-up attacks by requiring authorization servers to identify themselves in authorization responses
 - **RFC 9449** - OAuth 2.0 Demonstrating Proof of Possession (DPoP): Mechanism for sender-constraining OAuth tokens using proof-of-possession at the application layer
