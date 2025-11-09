@@ -38,6 +38,7 @@ graph LR
     OAuth2_MultiResp["OAuth 2.0 Multiple Response Type Encoding Practices"]
     OAuth2_AttestAuth["OAuth 2.0 Attestation-Based Client Authentication (Draft)"]
     OAuth2_BrowserApps["OAuth 2.0 for Browser-Based Applications (Draft)"]
+    OAuth2_JWTState["Encoding claims in the OAuth 2 state parameter using a JWT (Draft)"]
   end
 
   %% --- JOSE / JWT ---
@@ -102,6 +103,8 @@ graph LR
   OAuth2_AttestAuth --> RFC7519
   OAuth2_BrowserApps --> RFC6749
   OAuth2_BrowserApps --> RFC7636
+  OAuth2_JWTState --> RFC6749
+  OAuth2_JWTState --> RFC7519
 
   %% ---- Edges: OIDC depending on OAuth / JWT ----
   OIDC_Core --> RFC6749
@@ -183,6 +186,7 @@ graph LR
   click OAuth2_MultiResp "https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html" "OAuth 2.0 Multiple Response Type Encoding Practices"
   click OAuth2_AttestAuth "https://datatracker.ietf.org/doc/draft-ietf-oauth-attestation-based-client-auth/" "OAuth 2.0 Attestation-Based Client Authentication (Draft)"
   click OAuth2_BrowserApps "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps" "OAuth 2.0 for Browser-Based Applications (Draft)"
+  click OAuth2_JWTState "https://datatracker.ietf.org/doc/draft-bradley-oauth-jwt-encoded-state/" "Encoding claims in the OAuth 2 state parameter using a JWT (Draft)"
 
   click RFC7515 "https://datatracker.ietf.org/doc/html/rfc7515" "JSON Web Signature (JWS) (RFC 7515)"
   click RFC7516 "https://datatracker.ietf.org/doc/html/rfc7516" "JSON Web Encryption (JWE) (RFC 7516)"

@@ -59,6 +59,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **OAuth 2.0 Multiple Response Type Encoding Practices**: Defines encoding for multiple response types in OAuth 2.0 authorization responses
 - **OAuth 2.0 Attestation-Based Client Authentication (Draft)**: Enables client instances to authenticate using attestations bound to client instance keys, supporting both traditional and platform-specific attestation mechanisms
 - **OAuth 2.0 for Browser-Based Applications (Draft)**: Best practices and security considerations for OAuth 2.0 applications running entirely in the browser, including guidance on using authorization code flow with PKCE
+- **Encoding claims in the OAuth 2 state parameter using a JWT (Draft)**: Defines how to encode claims in the OAuth 2.0 state parameter as a JWT, enabling secure passing of additional information between authorization request and response
 
 ### JOSE/JWT Security
 
