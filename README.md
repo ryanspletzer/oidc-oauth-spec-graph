@@ -52,6 +52,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 7518** - JSON Web Algorithms (JWA): Cryptographic algorithms for JOSE
 - **RFC 7519** - JSON Web Token (JWT): Compact, URL-safe means of representing claims
 - **RFC 9068** - JWT Profile for OAuth 2.0 Access Tokens: Standardizes JWT-based access tokens
+- **RFC 9728** - JWT Profile for OAuth 2.0 Authorization Server Issuer Identification: Defines how to prevent mix-up attacks by including issuer identification in JWT responses
 
 ### OpenID Connect Identity Layer
 
