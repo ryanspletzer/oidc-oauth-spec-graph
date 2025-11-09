@@ -44,6 +44,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 8252** - OAuth 2.0 for Native Apps: Best practices for OAuth 2.0 in native applications, including mobile and desktop apps
 - **RFC 8414** - Authorization Server Metadata: Standardizes discovery of authorization server capabilities
 - **RFC 8693** - OAuth 2.0 Token Exchange: Defines a protocol for exchanging security tokens, enabling delegation and impersonation scenarios
+- **RFC 8705** - OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens: Defines mutual TLS for client authentication and methods for binding access tokens to client certificates
 - **RFC 9126** - OAuth 2.0 Pushed Authorization Requests: Allows clients to push authorization request parameters directly to the authorization server before redirecting the user
 - **RFC 9449** - OAuth 2.0 Demonstrating Proof of Possession (DPoP): Mechanism for sender-constraining OAuth tokens using proof-of-possession at the application layer
 - **RFC 9700** - OAuth 2.0 Token Revocation: Defines a mechanism for clients to notify authorization servers that a token is no longer needed
