@@ -22,6 +22,7 @@ graph LR
     RFC7592["Dynamic Client Registration Management (RFC 7592)"]
     RFC8252["OAuth 2.0 for Native Apps (RFC 8252)"]
     RFC8414["Authorization Server Metadata (RFC 8414)"]
+    RFC8628["OAuth 2.0 Device Authorization Grant (RFC 8628)"]
     RFC8693["OAuth 2.0 Token Exchange (RFC 8693)"]
     RFC8705["OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC 8705)"]
     RFC9126["OAuth 2.0 Pushed Authorization Requests (RFC 9126)"]
@@ -66,6 +67,7 @@ graph LR
   RFC8252 --> RFC7636
   RFC8414 --> RFC6749
   RFC8414 --> RFC7591
+  RFC8628 --> RFC6749
   RFC8693 --> RFC6749
   RFC8693 --> RFC6750
   RFC8705 --> RFC6749
@@ -137,6 +139,7 @@ graph LR
   click RFC7592 "https://datatracker.ietf.org/doc/html/rfc7592" "Dynamic Client Registration Management (RFC 7592)"
   click RFC8252 "https://datatracker.ietf.org/doc/html/rfc8252" "OAuth 2.0 for Native Apps (RFC 8252)"
   click RFC8414 "https://datatracker.ietf.org/doc/html/rfc8414" "Authorization Server Metadata (RFC 8414)"
+  click RFC8628 "https://datatracker.ietf.org/doc/html/rfc8628" "OAuth 2.0 Device Authorization Grant (RFC 8628)"
   click RFC8693 "https://datatracker.ietf.org/doc/html/rfc8693" "OAuth 2.0 Token Exchange (RFC 8693)"
   click RFC8705 "https://datatracker.ietf.org/doc/html/rfc8705" "OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC 8705)"
   click RFC9126 "https://datatracker.ietf.org/doc/html/rfc9126" "OAuth 2.0 Pushed Authorization Requests (RFC 9126)"
