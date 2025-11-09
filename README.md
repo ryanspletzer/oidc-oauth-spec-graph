@@ -31,6 +31,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 7636** - PKCE: Proof Key for Code Exchange, security extension for public clients
 - **RFC 7591** - Dynamic Client Registration: Allows clients to register themselves with authorization servers
 - **RFC 8414** - Authorization Server Metadata: Standardizes discovery of authorization server capabilities
+- **OAuth 2.0 Multiple Response Type Encoding Practices**: Defines encoding for multiple response types in OAuth 2.0 authorization responses
 
 ### JOSE/JWT Security
 
