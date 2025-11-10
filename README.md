@@ -59,7 +59,6 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 9635** - Grant Negotiation and Authorization Protocol (GNAP): A next-generation authorization protocol designed to address limitations of OAuth 2.0, enabling flexible grant negotiation and advanced delegation scenarios
 - **RFC 9449** - OAuth 2.0 Demonstrating Proof of Possession (DPoP): Mechanism for sender-constraining OAuth tokens using proof-of-possession at the application layer
 - **RFC 9470** - OAuth 2.0 Step Up Authentication Challenge Protocol: Defines a mechanism for resource servers to signal to clients that additional authentication is required to access protected resources
-- **RFC 9493** - Subject Identifiers for Security Event Tokens: Defines subject identifier formats for expressing the subject of a security event in Security Event Tokens (SETs)
 - **RFC 9700** - OAuth 2.0 Security Best Current Practice: Comprehensive security guidelines and best practices for OAuth 2.0 implementations, consolidating lessons learned and security considerations
 - **OAuth 2.0 Multiple Response Type Encoding Practices**: Defines encoding for multiple response types in OAuth 2.0 authorization responses
 - **OAuth 2.0 Attestation-Based Client Authentication (Draft)**: Enables client instances to authenticate using attestations bound to client instance keys, supporting both traditional and platform-specific attestation mechanisms
