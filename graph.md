@@ -43,6 +43,7 @@ graph LR
     RFC9449["OAuth 2.0 Demonstrating Proof of Possession (RFC 9449)"]
     RFC9635["Grant Negotiation and Authorization Protocol (GNAP) (RFC 9635)"]
     RFC9470["OAuth 2.0 Step Up Authentication Challenge Protocol (RFC 9470)"]
+    RFC9493["Subject Identifiers for Security Event Tokens (RFC 9493)"]
     RFC9700["OAuth 2.0 Security Best Current Practice (RFC 9700)"]
     OAuth2_MultiResp["OAuth 2.0 Multiple Response Type Encoding Practices"]
     OAuth2_AttestAuth["OAuth 2.0 Attestation-Based Client Authentication (Draft)"]
@@ -112,6 +113,7 @@ graph LR
   RFC9449 --> RFC7519
   RFC9470 --> RFC6749
   RFC9470 --> RFC6750
+  RFC9493 --> RFC7519
   RFC9700 --> RFC6749
   RFC9700 --> RFC6750
   OAuth2_MultiResp --> RFC6749
@@ -212,6 +214,7 @@ graph LR
   click RFC9449 "https://datatracker.ietf.org/doc/html/rfc9449" "OAuth 2.0 Demonstrating Proof of Possession (RFC 9449)"
   click RFC9635 "https://datatracker.ietf.org/doc/html/rfc9635" "Grant Negotiation and Authorization Protocol (GNAP) (RFC 9635)"
   click RFC9470 "https://datatracker.ietf.org/doc/html/rfc9470" "OAuth 2.0 Step Up Authentication Challenge Protocol (RFC 9470)"
+  click RFC9493 "https://datatracker.ietf.org/doc/html/rfc9493" "Subject Identifiers for Security Event Tokens (RFC 9493)"
   click RFC9700 "https://datatracker.ietf.org/doc/html/rfc9700" "OAuth 2.0 Security Best Current Practice (RFC 9700)"
   click OAuth2_MultiResp "https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html" "OAuth 2.0 Multiple Response Type Encoding Practices"
   click OAuth2_AttestAuth "https://datatracker.ietf.org/doc/draft-ietf-oauth-attestation-based-client-auth/" "OAuth 2.0 Attestation-Based Client Authentication (Draft)"
