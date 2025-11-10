@@ -8,6 +8,11 @@ graph LR
     OIDC_Core["OpenID Connect Core 1.0"]
     OIDC_Discovery["OpenID Connect Discovery 1.0"]
     OIDC_Reg["OpenID Connect Dynamic Client Registration 1.0"]
+    OIDC_Session["OpenID Connect Session Management 1.0"]
+    OIDC_FrontLogout["OpenID Connect Front-Channel Logout 1.0"]
+    OIDC_BackLogout["OpenID Connect Back-Channel Logout 1.0"]
+    OIDC_RPLogout["OpenID Connect RP-Initiated Logout 1.0"]
+    OIDC_IDA["OpenID Connect for Identity Assurance 1.0"]
   end
 
   %% --- OAuth 2.0 RFCs ---
@@ -30,10 +35,13 @@ graph LR
     RFC8693["OAuth 2.0 Token Exchange (RFC 8693)"]
     RFC8705["OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC 8705)"]
     RFC8707["OAuth 2.0 Resource Indicators (RFC 8707)"]
+    RFC9101["OAuth 2.0 JWT-Secured Authorization Request (JAR) (RFC 9101)"]
     RFC9126["OAuth 2.0 Pushed Authorization Requests (RFC 9126)"]
     RFC9207["OAuth 2.0 Authorization Server Issuer Identification (RFC 9207)"]
+    RFC9278["OAuth 2.0 Incremental Authorization (RFC 9278)"]
     RFC9396["OAuth 2.0 Rich Authorization Requests (RFC 9396)"]
     RFC9449["OAuth 2.0 Demonstrating Proof of Possession (RFC 9449)"]
+    RFC9635["Grant Negotiation and Authorization Protocol (GNAP) (RFC 9635)"]
     RFC9470["OAuth 2.0 Step Up Authentication Challenge Protocol (RFC 9470)"]
     RFC9700["OAuth 2.0 Security Best Current Practice (RFC 9700)"]
     OAuth2_MultiResp["OAuth 2.0 Multiple Response Type Encoding Practices"]
@@ -93,10 +101,14 @@ graph LR
   RFC8705 --> RFC6749
   RFC8705 --> RFC6750
   RFC8707 --> RFC6749
+  RFC9101 --> RFC6749
+  RFC9101 --> RFC7519
   RFC9126 --> RFC6749
   RFC9207 --> RFC6749
+  RFC9278 --> RFC6749
   RFC9396 --> RFC6749
   RFC9449 --> RFC6749
+  RFC9635 --> RFC6749
   RFC9449 --> RFC7519
   RFC9470 --> RFC6749
   RFC9470 --> RFC6750
@@ -127,6 +139,14 @@ graph LR
   %% ---- Edges: OIDC internal references ----
   OIDC_Core --> OIDC_Discovery
   OIDC_Core --> OIDC_Reg
+  OIDC_Session --> OIDC_Core
+  OIDC_FrontLogout --> OIDC_Core
+  OIDC_FrontLogout --> OIDC_Session
+  OIDC_BackLogout --> OIDC_Core
+  OIDC_BackLogout --> OIDC_Session
+  OIDC_RPLogout --> OIDC_Core
+  OIDC_RPLogout --> OIDC_Session
+  OIDC_IDA --> OIDC_Core
 
   %% ---- Edges: JOSE internal references ----
   RFC7515 --> RFC7518
@@ -184,10 +204,13 @@ graph LR
   click RFC8693 "https://datatracker.ietf.org/doc/html/rfc8693" "OAuth 2.0 Token Exchange (RFC 8693)"
   click RFC8705 "https://datatracker.ietf.org/doc/html/rfc8705" "OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC 8705)"
   click RFC8707 "https://datatracker.ietf.org/doc/html/rfc8707" "OAuth 2.0 Resource Indicators (RFC 8707)"
+  click RFC9101 "https://datatracker.ietf.org/doc/html/rfc9101" "OAuth 2.0 JWT-Secured Authorization Request (JAR) (RFC 9101)"
   click RFC9126 "https://datatracker.ietf.org/doc/html/rfc9126" "OAuth 2.0 Pushed Authorization Requests (RFC 9126)"
   click RFC9207 "https://datatracker.ietf.org/doc/html/rfc9207" "OAuth 2.0 Authorization Server Issuer Identification (RFC 9207)"
+  click RFC9278 "https://datatracker.ietf.org/doc/html/rfc9278" "OAuth 2.0 Incremental Authorization (RFC 9278)"
   click RFC9396 "https://datatracker.ietf.org/doc/html/rfc9396" "OAuth 2.0 Rich Authorization Requests (RFC 9396)"
   click RFC9449 "https://datatracker.ietf.org/doc/html/rfc9449" "OAuth 2.0 Demonstrating Proof of Possession (RFC 9449)"
+  click RFC9635 "https://datatracker.ietf.org/doc/html/rfc9635" "Grant Negotiation and Authorization Protocol (GNAP) (RFC 9635)"
   click RFC9470 "https://datatracker.ietf.org/doc/html/rfc9470" "OAuth 2.0 Step Up Authentication Challenge Protocol (RFC 9470)"
   click RFC9700 "https://datatracker.ietf.org/doc/html/rfc9700" "OAuth 2.0 Security Best Current Practice (RFC 9700)"
   click OAuth2_MultiResp "https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html" "OAuth 2.0 Multiple Response Type Encoding Practices"
@@ -208,6 +231,11 @@ graph LR
   click OIDC_Core "https://openid.net/specs/openid-connect-core-1_0.html" "OpenID Connect Core 1.0"
   click OIDC_Discovery "https://openid.net/specs/openid-connect-discovery-1_0.html" "OpenID Connect Discovery 1.0"
   click OIDC_Reg "https://openid.net/specs/openid-connect-registration-1_0.html" "OpenID Connect Dynamic Client Registration 1.0"
+  click OIDC_Session "https://openid.net/specs/openid-connect-session-1_0.html" "OpenID Connect Session Management 1.0"
+  click OIDC_FrontLogout "https://openid.net/specs/openid-connect-frontchannel-1_0.html" "OpenID Connect Front-Channel Logout 1.0"
+  click OIDC_BackLogout "https://openid.net/specs/openid-connect-backchannel-1_0.html" "OpenID Connect Back-Channel Logout 1.0"
+  click OIDC_RPLogout "https://openid.net/specs/openid-connect-rpinitiated-1_0.html" "OpenID Connect RP-Initiated Logout 1.0"
+  click OIDC_IDA "https://openid.net/specs/openid-connect-4-identity-assurance-1_0.html" "OpenID Connect for Identity Assurance 1.0"
 
   click UMA_Grant "https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-grant-2.0.html" "UMA 2.0 Grant for OAuth 2.0"
   click UMA_FedAuthz "https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-federated-authz-2.0.html" "UMA 2.0 Federated Authorization"

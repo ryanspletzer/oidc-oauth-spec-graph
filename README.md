@@ -51,9 +51,12 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 8693** - OAuth 2.0 Token Exchange: Defines a protocol for exchanging security tokens, enabling delegation and impersonation scenarios
 - **RFC 8705** - OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens: Defines mutual TLS for client authentication and methods for binding access tokens to client certificates
 - **RFC 8707** - OAuth 2.0 Resource Indicators: Allows clients to specify target resource servers when requesting access tokens
+- **RFC 9101** - OAuth 2.0 JWT-Secured Authorization Request (JAR): Enables passing authorization request parameters as signed and/or encrypted JWTs for enhanced security
 - **RFC 9126** - OAuth 2.0 Pushed Authorization Requests: Allows clients to push authorization request parameters directly to the authorization server before redirecting the user
 - **RFC 9207** - OAuth 2.0 Authorization Server Issuer Identification: Provides a mechanism to prevent mix-up attacks by requiring authorization servers to identify themselves in authorization responses
+- **RFC 9278** - OAuth 2.0 Incremental Authorization: Allows clients to request additional scopes from users over time without requiring re-authentication
 - **RFC 9396** - OAuth 2.0 Rich Authorization Requests: Enables clients to specify fine-grained authorization data using structured syntax for complex authorization scenarios
+- **RFC 9635** - Grant Negotiation and Authorization Protocol (GNAP): A next-generation authorization protocol designed to address limitations of OAuth 2.0, enabling flexible grant negotiation and advanced delegation scenarios
 - **RFC 9449** - OAuth 2.0 Demonstrating Proof of Possession (DPoP): Mechanism for sender-constraining OAuth tokens using proof-of-possession at the application layer
 - **RFC 9470** - OAuth 2.0 Step Up Authentication Challenge Protocol: Defines a mechanism for resource servers to signal to clients that additional authentication is required to access protected resources
 - **RFC 9700** - OAuth 2.0 Security Best Current Practice: Comprehensive security guidelines and best practices for OAuth 2.0 implementations, consolidating lessons learned and security considerations
@@ -79,6 +82,11 @@ Each node in the graph is clickable and links directly to the official specifica
 - **OpenID Connect Core 1.0**: Main specification defining the identity layer on top of OAuth 2.0
 - **OpenID Connect Discovery 1.0**: Mechanism for discovering OpenID Connect provider configuration
 - **OpenID Connect Dynamic Client Registration 1.0**: Extension for dynamic client registration in OIDC context
+- **OpenID Connect Session Management 1.0**: Defines how to monitor and manage authentication sessions between relying parties and OpenID providers
+- **OpenID Connect Front-Channel Logout 1.0**: Defines a front-channel logout mechanism that allows relying parties to be notified when a user logs out
+- **OpenID Connect Back-Channel Logout 1.0**: Defines a back-channel logout mechanism using direct server-to-server communication for logout notifications
+- **OpenID Connect RP-Initiated Logout 1.0**: Defines how relying parties can initiate logout of the end-user at the OpenID provider
+- **OpenID Connect for Identity Assurance 1.0**: Framework for exchanging verified identity claims with assurance levels and evidence of identity verification
 
 ### UMA (User-Managed Access)
 
