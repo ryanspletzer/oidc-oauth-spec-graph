@@ -45,6 +45,7 @@ graph LR
     RFC9470["OAuth 2.0 Step Up Authentication Challenge Protocol (RFC 9470)"]
     RFC9700["OAuth 2.0 Security Best Current Practice (RFC 9700)"]
     OAuth2_MultiResp["OAuth 2.0 Multiple Response Type Encoding Practices"]
+    OAuth2_FormPost["OAuth 2.0 Form Post Response Mode"]
     OAuth2_AttestAuth["OAuth 2.0 Attestation-Based Client Authentication (Draft)"]
     OAuth2_BrowserApps["OAuth 2.0 for Browser-Based Applications (Draft)"]
     OAuth2_JWTState["Encoding claims in the OAuth 2 state parameter using a JWT (Draft)"]
@@ -115,6 +116,7 @@ graph LR
   RFC9700 --> RFC6749
   RFC9700 --> RFC6750
   OAuth2_MultiResp --> RFC6749
+  OAuth2_FormPost --> RFC6749
   OAuth2_AttestAuth --> RFC6749
   OAuth2_AttestAuth --> RFC7519
   OAuth2_BrowserApps --> RFC6749
@@ -214,6 +216,7 @@ graph LR
   click RFC9470 "https://datatracker.ietf.org/doc/html/rfc9470" "OAuth 2.0 Step Up Authentication Challenge Protocol (RFC 9470)"
   click RFC9700 "https://datatracker.ietf.org/doc/html/rfc9700" "OAuth 2.0 Security Best Current Practice (RFC 9700)"
   click OAuth2_MultiResp "https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html" "OAuth 2.0 Multiple Response Type Encoding Practices"
+  click OAuth2_FormPost "https://openid.net/specs/oauth-v2-form-post-response-mode-1_0.html" "OAuth 2.0 Form Post Response Mode"
   click OAuth2_AttestAuth "https://datatracker.ietf.org/doc/draft-ietf-oauth-attestation-based-client-auth/" "OAuth 2.0 Attestation-Based Client Authentication (Draft)"
   click OAuth2_BrowserApps "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps" "OAuth 2.0 for Browser-Based Applications (Draft)"
   click OAuth2_JWTState "https://datatracker.ietf.org/doc/draft-bradley-oauth-jwt-encoded-state/" "Encoding claims in the OAuth 2 state parameter using a JWT (Draft)"
