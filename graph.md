@@ -31,6 +31,7 @@ graph LR
     RFC7662["OAuth 2.0 Token Introspection (RFC 7662)"]
     RFC8252["OAuth 2.0 for Native Apps (RFC 8252)"]
     RFC8414["Authorization Server Metadata (RFC 8414)"]
+    OAuth2_ASDiscovery["OAuth 2.0 Authorization Server Discovery Metadata (Draft)"]
     RFC8628["OAuth 2.0 Device Authorization Grant (RFC 8628)"]
     RFC8693["OAuth 2.0 Token Exchange (RFC 8693)"]
     RFC8705["OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC 8705)"]
@@ -96,6 +97,7 @@ graph LR
   RFC8252 --> RFC7636
   RFC8414 --> RFC6749
   RFC8414 --> RFC7591
+  OAuth2_ASDiscovery --> RFC8414
   RFC8628 --> RFC6749
   RFC8693 --> RFC6749
   RFC8693 --> RFC6750
@@ -202,6 +204,7 @@ graph LR
   click RFC7662 "https://datatracker.ietf.org/doc/html/rfc7662" "OAuth 2.0 Token Introspection (RFC 7662)"
   click RFC8252 "https://datatracker.ietf.org/doc/html/rfc8252" "OAuth 2.0 for Native Apps (RFC 8252)"
   click RFC8414 "https://datatracker.ietf.org/doc/html/rfc8414" "Authorization Server Metadata (RFC 8414)"
+  click OAuth2_ASDiscovery "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-discovery-02" "OAuth 2.0 Authorization Server Discovery Metadata (Draft)"
   click RFC8628 "https://datatracker.ietf.org/doc/html/rfc8628" "OAuth 2.0 Device Authorization Grant (RFC 8628)"
   click RFC8693 "https://datatracker.ietf.org/doc/html/rfc8693" "OAuth 2.0 Token Exchange (RFC 8693)"
   click RFC8705 "https://datatracker.ietf.org/doc/html/rfc8705" "OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC 8705)"

@@ -47,6 +47,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 7662** - OAuth 2.0 Token Introspection: Defines a method for resource servers to query an authorization server about the state and metadata of an OAuth 2.0 token
 - **RFC 8252** - OAuth 2.0 for Native Apps: Best practices for OAuth 2.0 in native applications, including mobile and desktop apps
 - **RFC 8414** - Authorization Server Metadata: Standardizes discovery of authorization server capabilities
+- **OAuth 2.0 Authorization Server Discovery Metadata (Draft)**: Extends RFC 8414 with additional metadata for authorization server discovery and capabilities advertisement
 - **RFC 8628** - OAuth 2.0 Device Authorization Grant: Defines an OAuth grant type for browserless and input-constrained devices
 - **RFC 8693** - OAuth 2.0 Token Exchange: Defines a protocol for exchanging security tokens, enabling delegation and impersonation scenarios
 - **RFC 8705** - OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens: Defines mutual TLS for client authentication and methods for binding access tokens to client certificates
