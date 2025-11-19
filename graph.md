@@ -45,6 +45,7 @@ graph LR
     RFC9449["OAuth 2.0 Demonstrating Proof of Possession (RFC 9449)"]
     RFC9635["Grant Negotiation and Authorization Protocol (GNAP) (RFC 9635)"]
     RFC9470["OAuth 2.0 Step Up Authentication Challenge Protocol (RFC 9470)"]
+    OAuth2_PoPArch["OAuth 2.0 Proof-of-Possession (PoP) Security Architecture (Draft)"]
     OAuth2_PoPKeyDist["OAuth 2.0 Proof-of-Possession: Authorization Server to Client Key Distribution (Draft)"]
     OAuth2_SignedHTTP["A Method for Signing HTTP Requests for OAuth (Draft)"]
     RFC9700["OAuth 2.0 Security Best Current Practice (RFC 9700)"]
@@ -119,6 +120,7 @@ graph LR
   RFC9449 --> RFC7519
   RFC9470 --> RFC6749
   RFC9470 --> RFC6750
+  OAuth2_PoPArch --> RFC6749
   OAuth2_PoPKeyDist --> RFC6749
   OAuth2_PoPKeyDist --> RFC7519
   OAuth2_SignedHTTP --> RFC6749
@@ -226,6 +228,7 @@ graph LR
   click RFC9449 "https://datatracker.ietf.org/doc/html/rfc9449" "OAuth 2.0 Demonstrating Proof of Possession (RFC 9449)"
   click RFC9635 "https://datatracker.ietf.org/doc/html/rfc9635" "Grant Negotiation and Authorization Protocol (GNAP) (RFC 9635)"
   click RFC9470 "https://datatracker.ietf.org/doc/html/rfc9470" "OAuth 2.0 Step Up Authentication Challenge Protocol (RFC 9470)"
+  click OAuth2_PoPArch "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-pop-architecture-08" "OAuth 2.0 Proof-of-Possession (PoP) Security Architecture (Draft)"
   click OAuth2_PoPKeyDist "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-pop-key-distribution-02" "OAuth 2.0 Proof-of-Possession: Authorization Server to Client Key Distribution (Draft)"
   click OAuth2_SignedHTTP "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-signed-http-request-03" "A Method for Signing HTTP Requests for OAuth (Draft)"
   click RFC9700 "https://datatracker.ietf.org/doc/html/rfc9700" "OAuth 2.0 Security Best Current Practice (RFC 9700)"

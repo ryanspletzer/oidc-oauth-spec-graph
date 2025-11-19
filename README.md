@@ -61,6 +61,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 9635** - Grant Negotiation and Authorization Protocol (GNAP): A next-generation authorization protocol designed to address limitations of OAuth 2.0, enabling flexible grant negotiation and advanced delegation scenarios
 - **RFC 9449** - OAuth 2.0 Demonstrating Proof of Possession (DPoP): Mechanism for sender-constraining OAuth tokens using proof-of-possession at the application layer
 - **RFC 9470** - OAuth 2.0 Step Up Authentication Challenge Protocol: Defines a mechanism for resource servers to signal to clients that additional authentication is required to access protected resources
+- **OAuth 2.0 Proof-of-Possession (PoP) Security Architecture (Draft)**: Provides architectural guidance and security considerations for implementing proof-of-possession mechanisms in OAuth 2.0
 - **OAuth 2.0 Proof-of-Possession: Authorization Server to Client Key Distribution (Draft)**: Defines how authorization servers can securely distribute keys to clients for proof-of-possession token binding
 - **A Method for Signing HTTP Requests for OAuth (Draft)**: Defines a method for signing HTTP requests using OAuth credentials, enabling request integrity and authenticity verification
 - **RFC 9700** - OAuth 2.0 Security Best Current Practice: Comprehensive security guidelines and best practices for OAuth 2.0 implementations, consolidating lessons learned and security considerations
