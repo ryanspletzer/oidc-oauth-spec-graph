@@ -39,6 +39,7 @@ graph LR
     RFC9101["OAuth 2.0 JWT-Secured Authorization Request (JAR) (RFC 9101)"]
     RFC9126["OAuth 2.0 Pushed Authorization Requests (RFC 9126)"]
     RFC9207["OAuth 2.0 Authorization Server Issuer Identification (RFC 9207)"]
+    OAuth2_MixUpMit["OAuth 2.0 Mix-Up Mitigation (Draft)"]
     OAuth2_IncrAuthz["OAuth 2.0 Incremental Authorization (Draft)"]
     RFC9396["OAuth 2.0 Rich Authorization Requests (RFC 9396)"]
     RFC9449["OAuth 2.0 Demonstrating Proof of Possession (RFC 9449)"]
@@ -108,6 +109,7 @@ graph LR
   RFC9101 --> RFC7519
   RFC9126 --> RFC6749
   RFC9207 --> RFC6749
+  OAuth2_MixUpMit --> RFC6749
   OAuth2_IncrAuthz --> RFC6749
   RFC9396 --> RFC6749
   RFC9449 --> RFC6749
@@ -212,6 +214,7 @@ graph LR
   click RFC9101 "https://datatracker.ietf.org/doc/html/rfc9101" "OAuth 2.0 JWT-Secured Authorization Request (JAR) (RFC 9101)"
   click RFC9126 "https://datatracker.ietf.org/doc/html/rfc9126" "OAuth 2.0 Pushed Authorization Requests (RFC 9126)"
   click RFC9207 "https://datatracker.ietf.org/doc/html/rfc9207" "OAuth 2.0 Authorization Server Issuer Identification (RFC 9207)"
+  click OAuth2_MixUpMit "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-mix-up-mitigation-01" "OAuth 2.0 Mix-Up Mitigation (Draft)"
   click OAuth2_IncrAuthz "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-incremental-authz" "OAuth 2.0 Incremental Authorization (Draft)"
   click RFC9396 "https://datatracker.ietf.org/doc/html/rfc9396" "OAuth 2.0 Rich Authorization Requests (RFC 9396)"
   click RFC9449 "https://datatracker.ietf.org/doc/html/rfc9449" "OAuth 2.0 Demonstrating Proof of Possession (RFC 9449)"
