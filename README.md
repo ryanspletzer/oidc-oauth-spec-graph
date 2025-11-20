@@ -36,6 +36,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 6749** - OAuth 2.0 Authorization Framework: The core OAuth 2.0 specification
 - **OAuth 2.1 Authorization Framework (Draft)**: Consolidates OAuth 2.0 and related best practices into a single document, mandating PKCE, eliminating implicit flow, and incorporating security improvements from RFC 8252
 - **RFC 6750** - Bearer Token Usage: Defines how to use bearer tokens in HTTP requests
+- **RFC 6755** - An IETF URN Sub-Namespace for OAuth: Establishes a URN sub-namespace for OAuth-related parameter names and values
 - **RFC 6819** - OAuth 2.0 Threat Model and Security Considerations: Comprehensive analysis of OAuth 2.0 security threats and countermeasures
 - **RFC 7009** - OAuth 2.0 Token Revocation: Defines a mechanism for clients to notify authorization servers that a token is no longer needed
 - **RFC 7521** - Assertion Framework for OAuth 2.0 Client Authentication and Authorization Grants: Common framework for using assertions with OAuth 2.0

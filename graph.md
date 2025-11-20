@@ -20,6 +20,7 @@ graph LR
     RFC6749["OAuth 2.0 Authorization Framework (RFC 6749)"]
     OAuth2_1["OAuth 2.1 Authorization Framework (Draft)"]
     RFC6750["Bearer Token Usage (RFC 6750)"]
+    RFC6755["An IETF URN Sub-Namespace for OAuth (RFC 6755)"]
     RFC6819["OAuth 2.0 Threat Model and Security Considerations (RFC 6819)"]
     RFC7521["Assertion Framework for OAuth 2.0 (RFC 7521)"]
     RFC7522["SAML 2.0 Profile for OAuth 2.0 (RFC 7522)"]
@@ -85,6 +86,7 @@ graph LR
   OAuth2_1 --> RFC7636
   OAuth2_1 --> RFC8252
   RFC6750 --> RFC6749
+  RFC6755 --> RFC6749
   RFC6819 --> RFC6749
   RFC6819 --> RFC6750
   RFC7009 --> RFC6749
@@ -203,6 +205,7 @@ graph LR
   click RFC6749 "https://datatracker.ietf.org/doc/html/rfc6749" "OAuth 2.0 Authorization Framework (RFC 6749)"
   click OAuth2_1 "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1" "OAuth 2.1 Authorization Framework (Draft)"
   click RFC6750 "https://datatracker.ietf.org/doc/html/rfc6750" "Bearer Token Usage (RFC 6750)"
+  click RFC6755 "https://datatracker.ietf.org/doc/html/rfc6755" "An IETF URN Sub-Namespace for OAuth (RFC 6755)"
   click RFC6819 "https://datatracker.ietf.org/doc/html/rfc6819" "OAuth 2.0 Threat Model and Security Considerations (RFC 6819)"
   click RFC7009 "https://datatracker.ietf.org/doc/html/rfc7009" "OAuth 2.0 Token Revocation (RFC 7009)"
   click RFC7521 "https://datatracker.ietf.org/doc/html/rfc7521" "Assertion Framework for OAuth 2.0 (RFC 7521)"
