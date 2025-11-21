@@ -29,6 +29,7 @@ graph LR
     RFC7009["OAuth 2.0 Token Revocation (RFC 7009)"]
     RFC7591["Dynamic Client Registration (RFC 7591)"]
     RFC7592["Dynamic Client Registration Management (RFC 7592)"]
+    OAuth2_ClientIDMeta["OAuth Client ID Metadata Document (Draft)"]
     RFC7662["OAuth 2.0 Token Introspection (RFC 7662)"]
     RFC8252["OAuth 2.0 for Native Apps (RFC 8252)"]
     RFC8414["Authorization Server Metadata (RFC 8414)"]
@@ -97,6 +98,8 @@ graph LR
   RFC7636 --> RFC6749
   RFC7591 --> RFC6749
   RFC7592 --> RFC7591
+  OAuth2_ClientIDMeta --> RFC6749
+  OAuth2_ClientIDMeta --> RFC7591
   RFC7662 --> RFC6749
   RFC7662 --> RFC6750
   RFC8252 --> RFC6749
@@ -214,6 +217,7 @@ graph LR
   click RFC7636 "https://datatracker.ietf.org/doc/html/rfc7636" "PKCE (RFC 7636)"
   click RFC7591 "https://datatracker.ietf.org/doc/html/rfc7591" "Dynamic Client Registration (RFC 7591)"
   click RFC7592 "https://datatracker.ietf.org/doc/html/rfc7592" "Dynamic Client Registration Management (RFC 7592)"
+  click OAuth2_ClientIDMeta "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-client-id-metadata-document-00" "OAuth Client ID Metadata Document (Draft)"
   click RFC7662 "https://datatracker.ietf.org/doc/html/rfc7662" "OAuth 2.0 Token Introspection (RFC 7662)"
   click RFC8252 "https://datatracker.ietf.org/doc/html/rfc8252" "OAuth 2.0 for Native Apps (RFC 8252)"
   click RFC8414 "https://datatracker.ietf.org/doc/html/rfc8414" "Authorization Server Metadata (RFC 8414)"
