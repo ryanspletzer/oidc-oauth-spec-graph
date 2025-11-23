@@ -88,6 +88,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 8725** - JSON Web Token Best Current Practices: Security best practices and recommendations for JWT implementations
 - **RFC 9068** - JWT Profile for OAuth 2.0 Access Tokens: Standardizes JWT-based access tokens
 - **RFC 9728** - JWT Profile for OAuth 2.0 Authorization Server Issuer Identification: Defines how to prevent mix-up attacks by including issuer identification in JWT responses
+- **RFC 9493** - Subject Identifiers for Security Event Tokens: Formalizes Subject Identifiers as JSON objects for identifying subjects in SETs and JWTs, defining identifier formats (email, phone, issuer/subject, opaque, account, DID, URI, aliases) and the JWT "sub_id" claim
 
 ### OpenID Connect Identity Layer
 
