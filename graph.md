@@ -40,6 +40,7 @@ graph LR
     RFC8707["OAuth 2.0 Resource Indicators (RFC 8707)"]
     RFC9101["OAuth 2.0 JWT-Secured Authorization Request (JAR) (RFC 9101)"]
     RFC9126["OAuth 2.0 Pushed Authorization Requests (RFC 9126)"]
+    OAuth2_JARM["JWT Secured Authorization Response Mode for OAuth 2.0 (JARM)"]
     RFC9207["OAuth 2.0 Authorization Server Issuer Identification (RFC 9207)"]
     OAuth2_MixUpMit["OAuth 2.0 Mix-Up Mitigation (Draft)"]
     OAuth2_IncrAuthz["OAuth 2.0 Incremental Authorization (Draft)"]
@@ -116,6 +117,8 @@ graph LR
   RFC9101 --> RFC6749
   RFC9101 --> RFC7519
   RFC9126 --> RFC6749
+  OAuth2_JARM --> RFC6749
+  OAuth2_JARM --> RFC7519
   RFC9207 --> RFC6749
   OAuth2_MixUpMit --> RFC6749
   OAuth2_IncrAuthz --> RFC6749
@@ -228,6 +231,7 @@ graph LR
   click RFC8707 "https://datatracker.ietf.org/doc/html/rfc8707" "OAuth 2.0 Resource Indicators (RFC 8707)"
   click RFC9101 "https://datatracker.ietf.org/doc/html/rfc9101" "OAuth 2.0 JWT-Secured Authorization Request (JAR) (RFC 9101)"
   click RFC9126 "https://datatracker.ietf.org/doc/html/rfc9126" "OAuth 2.0 Pushed Authorization Requests (RFC 9126)"
+  click OAuth2_JARM "https://openid.net/specs/oauth-v2-jarm-final.html" "JWT Secured Authorization Response Mode for OAuth 2.0 (JARM)"
   click RFC9207 "https://datatracker.ietf.org/doc/html/rfc9207" "OAuth 2.0 Authorization Server Issuer Identification (RFC 9207)"
   click OAuth2_MixUpMit "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-mix-up-mitigation-01" "OAuth 2.0 Mix-Up Mitigation (Draft)"
   click OAuth2_IncrAuthz "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-incremental-authz" "OAuth 2.0 Incremental Authorization (Draft)"

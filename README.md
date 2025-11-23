@@ -56,6 +56,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 8707** - OAuth 2.0 Resource Indicators: Allows clients to specify target resource servers when requesting access tokens
 - **RFC 9101** - OAuth 2.0 JWT-Secured Authorization Request (JAR): Enables passing authorization request parameters as signed and/or encrypted JWTs for enhanced security
 - **RFC 9126** - OAuth 2.0 Pushed Authorization Requests: Allows clients to push authorization request parameters directly to the authorization server before redirecting the user
+- **JWT Secured Authorization Response Mode for OAuth 2.0 (JARM)**: Defines a response mode that enables authorization responses to be encoded as signed and/or encrypted JWTs for enhanced security
 - **RFC 9207** - OAuth 2.0 Authorization Server Issuer Identification: Provides a mechanism to prevent mix-up attacks by requiring authorization servers to identify themselves in authorization responses
 - **OAuth 2.0 Mix-Up Mitigation (Draft)**: Defines security mechanisms to prevent mix-up attacks in OAuth 2.0 implementations where multiple authorization servers are used
 - **OAuth 2.0 Incremental Authorization (Draft)**: Allows clients to request additional scopes from users over time without requiring re-authentication
