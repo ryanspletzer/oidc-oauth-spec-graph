@@ -97,6 +97,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **OpenID Connect Back-Channel Logout 1.0**: Defines a back-channel logout mechanism using direct server-to-server communication for logout notifications
 - **OpenID Connect RP-Initiated Logout 1.0**: Defines how relying parties can initiate logout of the end-user at the OpenID provider
 - **OpenID Connect for Identity Assurance 1.0**: Framework for exchanging verified identity claims with assurance levels and evidence of identity verification
+- **OpenID Shared Signals Framework 1.0**: Defines a framework for sharing signals and events between cooperating parties, enabling real-time security event distribution using Security Event Tokens (SETs)
 
 ### UMA (User-Managed Access)
 

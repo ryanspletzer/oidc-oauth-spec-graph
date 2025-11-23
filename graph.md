@@ -13,6 +13,7 @@ graph LR
     OIDC_BackLogout["OpenID Connect Back-Channel Logout 1.0"]
     OIDC_RPLogout["OpenID Connect RP-Initiated Logout 1.0"]
     OIDC_IDA["OpenID Connect for Identity Assurance 1.0"]
+    OIDC_SSF["OpenID Shared Signals Framework 1.0"]
   end
 
   %% --- OAuth 2.0 RFCs ---
@@ -171,6 +172,8 @@ graph LR
   OIDC_RPLogout --> OIDC_Core
   OIDC_RPLogout --> OIDC_Session
   OIDC_IDA --> OIDC_Core
+  OIDC_SSF --> RFC8417
+  OIDC_SSF --> OIDC_Core
 
   %% ---- Edges: JOSE internal references ----
   RFC7515 --> RFC7518
@@ -270,6 +273,7 @@ graph LR
   click OIDC_BackLogout "https://openid.net/specs/openid-connect-backchannel-1_0.html" "OpenID Connect Back-Channel Logout 1.0"
   click OIDC_RPLogout "https://openid.net/specs/openid-connect-rpinitiated-1_0.html" "OpenID Connect RP-Initiated Logout 1.0"
   click OIDC_IDA "https://openid.net/specs/openid-connect-4-identity-assurance-1_0.html" "OpenID Connect for Identity Assurance 1.0"
+  click OIDC_SSF "https://openid.net/specs/openid-sharedsignals-framework-1_0.html" "OpenID Shared Signals Framework 1.0"
 
   click UMA_Grant "https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-grant-2.0.html" "UMA 2.0 Grant for OAuth 2.0"
   click UMA_FedAuthz "https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-federated-authz-2.0.html" "UMA 2.0 Federated Authorization"
