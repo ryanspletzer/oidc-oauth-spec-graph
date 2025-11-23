@@ -52,6 +52,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **OAuth 2.0 Authorization Server Discovery Metadata (Draft)**: Extends RFC 8414 with additional metadata for authorization server discovery and capabilities advertisement
 - **RFC 8417** - Security Event Token (SET): Defines a JWT-based data structure for representing security and identity-related events, such as token revocations, logout events, and state changes
 - **RFC 8628** - OAuth 2.0 Device Authorization Grant: Defines an OAuth grant type for browserless and input-constrained devices
+- **RFC 8935** - Push-Based Security Event Token (SET) Delivery Using HTTP: Defines how SETs can be delivered to recipients using HTTP POST over TLS for push-based event distribution
 - **RFC 8693** - OAuth 2.0 Token Exchange: Defines a protocol for exchanging security tokens, enabling delegation and impersonation scenarios
 - **RFC 8705** - OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens: Defines mutual TLS for client authentication and methods for binding access tokens to client certificates
 - **RFC 8707** - OAuth 2.0 Resource Indicators: Allows clients to specify target resource servers when requesting access tokens
