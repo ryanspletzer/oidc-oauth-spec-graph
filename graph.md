@@ -41,6 +41,7 @@ graph LR
     RFC8628["OAuth 2.0 Device Authorization Grant (RFC 8628)"]
     RFC8935["Push-Based Security Event Token (SET) Delivery Using HTTP (RFC 8935)"]
     RFC8936["Poll-Based Security Event Token (SET) Delivery Using HTTP (RFC 8936)"]
+    RFC9493["Subject Identifiers for Security Event Tokens (RFC 9493)"]
     RFC8693["OAuth 2.0 Token Exchange (RFC 8693)"]
     RFC8705["OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC 8705)"]
     RFC8707["OAuth 2.0 Resource Indicators (RFC 8707)"]
@@ -76,7 +77,6 @@ graph LR
     RFC8725["JSON Web Token Best Current Practices (RFC 8725)"]
     RFC9068["JWT Profile for OAuth 2.0 Access Tokens (RFC 9068)"]
     RFC9728["JWT Profile for OAuth 2.0 Authorization Server Issuer Identification (RFC 9728)"]
-    RFC9493["Subject Identifiers for Security Event Tokens (RFC 9493)"]
   end
 
   %% --- Discovery / Metadata ---
@@ -119,6 +119,8 @@ graph LR
   RFC8628 --> RFC6749
   RFC8935 --> RFC8417
   RFC8936 --> RFC8417
+  RFC9493 --> RFC7519
+  RFC9493 --> RFC8417
   RFC8693 --> RFC6749
   RFC8693 --> RFC6750
   RFC8705 --> RFC6749
@@ -214,9 +216,6 @@ graph LR
   RFC9728 --> RFC8414
   RFC9728 --> RFC7519
 
-  RFC9493 --> RFC7519
-  RFC9493 --> RFC8417
-
   %% ---- Edges: UMA depending on OAuth / JWT ----
   UMA_Grant --> RFC6749
   UMA_Grant --> RFC6750
@@ -248,6 +247,7 @@ graph LR
   click RFC8628 "https://datatracker.ietf.org/doc/html/rfc8628" "OAuth 2.0 Device Authorization Grant (RFC 8628)"
   click RFC8935 "https://datatracker.ietf.org/doc/html/rfc8935" "Push-Based Security Event Token (SET) Delivery Using HTTP (RFC 8935)"
   click RFC8936 "https://datatracker.ietf.org/doc/html/rfc8936" "Poll-Based Security Event Token (SET) Delivery Using HTTP (RFC 8936)"
+  click RFC9493 "https://datatracker.ietf.org/doc/html/rfc9493" "Subject Identifiers for Security Event Tokens (RFC 9493)"
   click RFC8693 "https://datatracker.ietf.org/doc/html/rfc8693" "OAuth 2.0 Token Exchange (RFC 8693)"
   click RFC8705 "https://datatracker.ietf.org/doc/html/rfc8705" "OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC 8705)"
   click RFC8707 "https://datatracker.ietf.org/doc/html/rfc8707" "OAuth 2.0 Resource Indicators (RFC 8707)"
@@ -280,7 +280,6 @@ graph LR
   click RFC8725 "https://datatracker.ietf.org/doc/html/rfc8725" "JSON Web Token Best Current Practices (RFC 8725)"
   click RFC9068 "https://datatracker.ietf.org/doc/html/rfc9068" "JWT Profile for OAuth 2.0 Access Tokens (RFC 9068)"
   click RFC9728 "https://datatracker.ietf.org/doc/html/rfc9728" "JWT Profile for OAuth 2.0 Authorization Server Issuer Identification (RFC 9728)"
-  click RFC9493 "https://datatracker.ietf.org/doc/html/rfc9493" "Subject Identifiers for Security Event Tokens (RFC 9493)"
 
   click OIDC_Core "https://openid.net/specs/openid-connect-core-1_0.html" "OpenID Connect Core 1.0"
   click OIDC_Discovery "https://openid.net/specs/openid-connect-discovery-1_0.html" "OpenID Connect Discovery 1.0"

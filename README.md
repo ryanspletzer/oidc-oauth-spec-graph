@@ -54,6 +54,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 8628** - OAuth 2.0 Device Authorization Grant: Defines an OAuth grant type for browserless and input-constrained devices
 - **RFC 8935** - Push-Based Security Event Token (SET) Delivery Using HTTP: Defines how SETs can be delivered to recipients using HTTP POST over TLS for push-based event distribution
 - **RFC 8936** - Poll-Based Security Event Token (SET) Delivery Using HTTP: Defines how recipients can poll for SETs using HTTP POST, providing an alternative delivery method where recipients initiate requests to check for and retrieve security events
+- **RFC 9493** - Subject Identifiers for Security Event Tokens: Formalizes Subject Identifiers as JSON objects for identifying subjects in SETs and JWTs, defining identifier formats (email, phone, issuer/subject, opaque, account, DID, URI, aliases) and the JWT "sub_id" claim
 - **RFC 8693** - OAuth 2.0 Token Exchange: Defines a protocol for exchanging security tokens, enabling delegation and impersonation scenarios
 - **RFC 8705** - OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens: Defines mutual TLS for client authentication and methods for binding access tokens to client certificates
 - **RFC 8707** - OAuth 2.0 Resource Indicators: Allows clients to specify target resource servers when requesting access tokens
@@ -88,7 +89,6 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 8725** - JSON Web Token Best Current Practices: Security best practices and recommendations for JWT implementations
 - **RFC 9068** - JWT Profile for OAuth 2.0 Access Tokens: Standardizes JWT-based access tokens
 - **RFC 9728** - JWT Profile for OAuth 2.0 Authorization Server Issuer Identification: Defines how to prevent mix-up attacks by including issuer identification in JWT responses
-- **RFC 9493** - Subject Identifiers for Security Event Tokens: Formalizes Subject Identifiers as JSON objects for identifying subjects in SETs and JWTs, defining identifier formats (email, phone, issuer/subject, opaque, account, DID, URI, aliases) and the JWT "sub_id" claim
 
 ### OpenID Connect Identity Layer
 
