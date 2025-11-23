@@ -38,6 +38,7 @@ graph LR
     RFC8417["Security Event Token (SET) (RFC 8417)"]
     RFC8628["OAuth 2.0 Device Authorization Grant (RFC 8628)"]
     RFC8935["Push-Based Security Event Token (SET) Delivery Using HTTP (RFC 8935)"]
+    RFC8936["Poll-Based Security Event Token (SET) Delivery Using HTTP (RFC 8936)"]
     RFC8693["OAuth 2.0 Token Exchange (RFC 8693)"]
     RFC8705["OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC 8705)"]
     RFC8707["OAuth 2.0 Resource Indicators (RFC 8707)"]
@@ -114,6 +115,7 @@ graph LR
   RFC8417 --> RFC7519
   RFC8628 --> RFC6749
   RFC8935 --> RFC8417
+  RFC8936 --> RFC8417
   RFC8693 --> RFC6749
   RFC8693 --> RFC6750
   RFC8705 --> RFC6749
@@ -235,6 +237,7 @@ graph LR
   click RFC8417 "https://datatracker.ietf.org/doc/html/rfc8417" "Security Event Token (SET) (RFC 8417)"
   click RFC8628 "https://datatracker.ietf.org/doc/html/rfc8628" "OAuth 2.0 Device Authorization Grant (RFC 8628)"
   click RFC8935 "https://datatracker.ietf.org/doc/html/rfc8935" "Push-Based Security Event Token (SET) Delivery Using HTTP (RFC 8935)"
+  click RFC8936 "https://datatracker.ietf.org/doc/html/rfc8936" "Poll-Based Security Event Token (SET) Delivery Using HTTP (RFC 8936)"
   click RFC8693 "https://datatracker.ietf.org/doc/html/rfc8693" "OAuth 2.0 Token Exchange (RFC 8693)"
   click RFC8705 "https://datatracker.ietf.org/doc/html/rfc8705" "OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC 8705)"
   click RFC8707 "https://datatracker.ietf.org/doc/html/rfc8707" "OAuth 2.0 Resource Indicators (RFC 8707)"
