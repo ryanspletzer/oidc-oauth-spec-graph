@@ -41,6 +41,7 @@ graph LR
     RFC8628["OAuth 2.0 Device Authorization Grant (RFC 8628)"]
     RFC8935["Push-Based Security Event Token (SET) Delivery Using HTTP (RFC 8935)"]
     RFC8936["Poll-Based Security Event Token (SET) Delivery Using HTTP (RFC 8936)"]
+    SET_StreamMgmt["Management API for SET Event Streams"]
     RFC9493["Subject Identifiers for Security Event Tokens (RFC 9493)"]
     RFC8693["OAuth 2.0 Token Exchange (RFC 8693)"]
     RFC8705["OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC 8705)"]
@@ -121,6 +122,9 @@ graph LR
   RFC8936 --> RFC8417
   RFC9493 --> RFC7519
   RFC9493 --> RFC8417
+  SET_StreamMgmt --> RFC8417
+  SET_StreamMgmt --> RFC8935
+  SET_StreamMgmt --> RFC8936
   RFC8693 --> RFC6749
   RFC8693 --> RFC6750
   RFC8705 --> RFC6749
@@ -247,6 +251,7 @@ graph LR
   click RFC8628 "https://datatracker.ietf.org/doc/html/rfc8628" "OAuth 2.0 Device Authorization Grant (RFC 8628)"
   click RFC8935 "https://datatracker.ietf.org/doc/html/rfc8935" "Push-Based Security Event Token (SET) Delivery Using HTTP (RFC 8935)"
   click RFC8936 "https://datatracker.ietf.org/doc/html/rfc8936" "Poll-Based Security Event Token (SET) Delivery Using HTTP (RFC 8936)"
+  click SET_StreamMgmt "https://datatracker.ietf.org/doc/html/draft-scurtescu-secevent-simple-control-plane" "Management API for SET Event Streams (Draft)"
   click RFC9493 "https://datatracker.ietf.org/doc/html/rfc9493" "Subject Identifiers for Security Event Tokens (RFC 9493)"
   click RFC8693 "https://datatracker.ietf.org/doc/html/rfc8693" "OAuth 2.0 Token Exchange (RFC 8693)"
   click RFC8705 "https://datatracker.ietf.org/doc/html/rfc8705" "OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC 8705)"
