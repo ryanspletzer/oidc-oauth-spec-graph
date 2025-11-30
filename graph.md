@@ -15,6 +15,7 @@ graph LR
     OIDC_IDA["OpenID Connect for Identity Assurance 1.0"]
     OIDC_SSF["OpenID Shared Signals Framework 1.0"]
     OIDC_CAEP["OpenID Continuous Access Evaluation Profile 1.0"]
+    OIDC_RISC_Spec["OpenID RISC Profile Specification 1.0"]
     OIDC_RISC_Profile["OpenID RISC Profile of IETF Security Events 1.0"]
     OIDC_RISC_Events["OpenID RISC Event Types 1.0"]
   end
@@ -130,6 +131,9 @@ graph LR
   RISC_UseCases --> RFC8417
   RISC_UseCases --> RFC8935
   RISC_UseCases --> RFC8936
+  OIDC_RISC_Spec --> RFC8417
+  OIDC_RISC_Spec --> RFC8935
+  OIDC_RISC_Spec --> RFC8936
   RFC8693 --> RFC6749
   RFC8693 --> RFC6750
   RFC8705 --> RFC6749
@@ -197,7 +201,9 @@ graph LR
   OIDC_RISC_Profile --> RFC8417
   OIDC_RISC_Profile --> RFC8935
   OIDC_RISC_Profile --> RFC8936
+  OIDC_RISC_Profile --> OIDC_RISC_Spec
   OIDC_RISC_Events --> OIDC_RISC_Profile
+  RISC_UseCases --> OIDC_RISC_Spec
   RISC_UseCases --> OIDC_RISC_Profile
 
   %% ---- Edges: JOSE internal references ----
@@ -305,6 +311,7 @@ graph LR
   click OIDC_IDA "https://openid.net/specs/openid-connect-4-identity-assurance-1_0.html" "OpenID Connect for Identity Assurance 1.0"
   click OIDC_SSF "https://openid.net/specs/openid-sharedsignals-framework-1_0.html" "OpenID Shared Signals Framework 1.0"
   click OIDC_CAEP "https://openid.net/specs/openid-caep-1_0.html" "OpenID Continuous Access Evaluation Profile 1.0"
+  click OIDC_RISC_Spec "https://openid.net/specs/openid-risc-1_0-final.html" "OpenID RISC Profile Specification 1.0"
   click OIDC_RISC_Profile "https://openid.net/specs/openid-risc-profile-1_0.html" "OpenID RISC Profile of IETF Security Events 1.0"
   click OIDC_RISC_Events "https://openid.net/specs/openid-risc-event-types-1_0.html" "OpenID RISC Event Types 1.0"
 
