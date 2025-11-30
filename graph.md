@@ -42,6 +42,7 @@ graph LR
     RFC8935["Push-Based Security Event Token (SET) Delivery Using HTTP (RFC 8935)"]
     RFC8936["Poll-Based Security Event Token (SET) Delivery Using HTTP (RFC 8936)"]
     SET_StreamMgmt["Management API for SET Event Streams"]
+    RISC_UseCases["Security Events RISC Use Cases"]
     RFC9493["Subject Identifiers for Security Event Tokens (RFC 9493)"]
     RFC8693["OAuth 2.0 Token Exchange (RFC 8693)"]
     RFC8705["OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC 8705)"]
@@ -125,6 +126,9 @@ graph LR
   SET_StreamMgmt --> RFC8417
   SET_StreamMgmt --> RFC8935
   SET_StreamMgmt --> RFC8936
+  RISC_UseCases --> RFC8417
+  RISC_UseCases --> RFC8935
+  RISC_UseCases --> RFC8936
   RFC8693 --> RFC6749
   RFC8693 --> RFC6750
   RFC8705 --> RFC6749
@@ -191,6 +195,7 @@ graph LR
   OIDC_RISC_Profile --> RFC8935
   OIDC_RISC_Profile --> RFC8936
   OIDC_RISC_Events --> OIDC_RISC_Profile
+  RISC_UseCases --> OIDC_RISC_Profile
 
   %% ---- Edges: JOSE internal references ----
   RFC7515 --> RFC7518
@@ -252,6 +257,7 @@ graph LR
   click RFC8935 "https://datatracker.ietf.org/doc/html/rfc8935" "Push-Based Security Event Token (SET) Delivery Using HTTP (RFC 8935)"
   click RFC8936 "https://datatracker.ietf.org/doc/html/rfc8936" "Poll-Based Security Event Token (SET) Delivery Using HTTP (RFC 8936)"
   click SET_StreamMgmt "https://datatracker.ietf.org/doc/html/draft-scurtescu-secevent-simple-control-plane" "Management API for SET Event Streams (Draft)"
+  click RISC_UseCases "https://datatracker.ietf.org/doc/html/draft-scurtescu-secevent-risc-use-cases-00" "Security Events RISC Use Cases (Draft)"
   click RFC9493 "https://datatracker.ietf.org/doc/html/rfc9493" "Subject Identifiers for Security Event Tokens (RFC 9493)"
   click RFC8693 "https://datatracker.ietf.org/doc/html/rfc8693" "OAuth 2.0 Token Exchange (RFC 8693)"
   click RFC8705 "https://datatracker.ietf.org/doc/html/rfc8705" "OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC 8705)"
