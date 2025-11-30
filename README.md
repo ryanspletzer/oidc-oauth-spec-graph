@@ -102,6 +102,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **OpenID Connect Back-Channel Logout 1.0**: Defines a back-channel logout mechanism using direct server-to-server communication for logout notifications
 - **OpenID Connect RP-Initiated Logout 1.0**: Defines how relying parties can initiate logout of the end-user at the OpenID provider
 - **OpenID Connect for Identity Assurance 1.0**: Framework for exchanging verified identity claims with assurance levels and evidence of identity verification
+- **OpenID Connect for Identity Assurance Claims Registration 1.0**: Specifies how OpenID Providers advertise and register verified claims metadata so relying parties can request Identity Assurance claims with aligned semantics
 - **OpenID Identity Assurance Schema Definition 1.0**: Provides the reusable JSON schema components for representing verified claims content defined by OpenID Identity Assurance, enabling consistent data exchange across providers
 - **OpenID Connect Core Error Code unmet_authentication_requirements**: Introduces an interoperable error signal for OIDC Core flows when stronger authentication is required, standardizing client handling of re-authentication prompts
 - **Initiating User Registration via OpenID Connect 1.0**: Specifies the `prompt=create` parameter to let clients trigger user registration flows through standard OIDC authorization requests while retaining compatibility with existing providers
