@@ -13,6 +13,7 @@ graph LR
     OIDC_BackLogout["OpenID Connect Back-Channel Logout 1.0"]
     OIDC_RPLogout["OpenID Connect RP-Initiated Logout 1.0"]
     OIDC_IDA["OpenID Connect for Identity Assurance 1.0"]
+    OIDC_IDA_Schema["OpenID Identity Assurance Schema Definition 1.0"]
     OIDC_UnmetAuthReq["OpenID Connect Core Error Code unmet_authentication_requirements"]
     OIDC_PromptCreate["Initiating User Registration via OpenID Connect 1.0"]
     OIDC_SSF["OpenID Shared Signals Framework 1.0"]
@@ -196,6 +197,7 @@ graph LR
   OIDC_RPLogout --> OIDC_Core
   OIDC_RPLogout --> OIDC_Session
   OIDC_IDA --> OIDC_Core
+  OIDC_IDA_Schema --> OIDC_IDA
   OIDC_UnmetAuthReq --> OIDC_Core
   OIDC_PromptCreate --> OIDC_Core
   OIDC_SSF --> RFC8417
@@ -313,6 +315,7 @@ graph LR
   click OIDC_BackLogout "https://openid.net/specs/openid-connect-backchannel-1_0.html" "OpenID Connect Back-Channel Logout 1.0"
   click OIDC_RPLogout "https://openid.net/specs/openid-connect-rpinitiated-1_0.html" "OpenID Connect RP-Initiated Logout 1.0"
   click OIDC_IDA "https://openid.net/specs/openid-connect-4-identity-assurance-1_0.html" "OpenID Connect for Identity Assurance 1.0"
+  click OIDC_IDA_Schema "https://openid.net/specs/openid-ida-verified-claims-1_0-final.html" "OpenID Identity Assurance Schema Definition 1.0"
   click OIDC_UnmetAuthReq "https://openid.net/specs/openid-connect-unmet-authentication-requirements-1_0.html" "OpenID Connect Core Error Code unmet_authentication_requirements"
   click OIDC_PromptCreate "https://openid.net/specs/openid-connect-prompt-create-1_0.html" "Initiating User Registration via OpenID Connect 1.0"
   click OIDC_SSF "https://openid.net/specs/openid-sharedsignals-framework-1_0.html" "OpenID Shared Signals Framework 1.0"
