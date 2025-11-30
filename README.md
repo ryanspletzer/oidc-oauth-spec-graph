@@ -102,6 +102,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **OpenID Connect Back-Channel Logout 1.0**: Defines a back-channel logout mechanism using direct server-to-server communication for logout notifications
 - **OpenID Connect RP-Initiated Logout 1.0**: Defines how relying parties can initiate logout of the end-user at the OpenID provider
 - **OpenID Connect for Identity Assurance 1.0**: Framework for exchanging verified identity claims with assurance levels and evidence of identity verification
+- **OpenID Connect Core Error Code unmet_authentication_requirements**: Introduces an interoperable error signal for OIDC Core flows when stronger authentication is required, standardizing client handling of re-authentication prompts
 - **OpenID Shared Signals Framework 1.0**: Defines a framework for sharing signals and events between cooperating parties, enabling real-time security event distribution using Security Event Tokens (SETs)
 - **OpenID Continuous Access Evaluation Profile 1.0**: Profiles the Shared Signals Framework to express continuous access evaluation events, mapping CAEP signal semantics onto Security Event Tokens so relying parties can adjust session state in near real time
 - **OpenID RISC Profile Specification 1.0**: Establishes the OpenID Risk Incident Sharing and Coordination model, mapping RISC event semantics to Security Event Tokens and HTTP delivery so providers can exchange account and credential risk signals
