@@ -103,6 +103,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **OpenID Connect RP-Initiated Logout 1.0**: Defines how relying parties can initiate logout of the end-user at the OpenID provider
 - **OpenID Connect for Identity Assurance 1.0**: Framework for exchanging verified identity claims with assurance levels and evidence of identity verification
 - **OpenID Shared Signals Framework 1.0**: Defines a framework for sharing signals and events between cooperating parties, enabling real-time security event distribution using Security Event Tokens (SETs)
+- **OpenID Continuous Access Evaluation Profile 1.0**: Profiles the Shared Signals Framework to express continuous access evaluation events, mapping CAEP signal semantics onto Security Event Tokens so relying parties can adjust session state in near real time
 - **OpenID RISC Profile of IETF Security Events 1.0**: Profiles RFC 8417 (SET), RFC 8935 (push delivery), and RFC 8936 (poll delivery) for Risk Incident Sharing and Coordination, defining subject identifiers, transmitter configuration discovery, and management APIs for event streams
 - **OpenID RISC Event Types 1.0**: Defines specific event types for RISC including account security events (credential changes, account disabled/enabled, purged), identifier events (changed, recycled), opt-out management, recovery events, and session revocation
 
