@@ -46,6 +46,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 7591** - Dynamic Client Registration: Allows clients to register themselves with authorization servers
 - **RFC 7592** - Dynamic Client Registration Management Protocol: Defines how clients can manage their dynamically registered OAuth 2.0 client configurations
 - **OAuth Client ID Metadata Document (Draft)**: Defines a method for clients to publish metadata about themselves at a well-known location, enabling authorization servers and resource servers to discover client configuration
+- **OAuth 2.0 Client ID Scheme (Draft)**: Defines a mechanism for encoding client type and metadata directly in the client identifier, enabling authorization servers to derive client properties without additional lookups
 - **RFC 7662** - OAuth 2.0 Token Introspection: Defines a method for resource servers to query an authorization server about the state and metadata of an OAuth 2.0 token
 - **RFC 8252** - OAuth 2.0 for Native Apps: Best practices for OAuth 2.0 in native applications, including mobile and desktop apps
 - **RFC 8414** - Authorization Server Metadata: Standardizes discovery of authorization server capabilities
