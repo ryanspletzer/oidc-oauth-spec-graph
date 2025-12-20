@@ -43,6 +43,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 7522** - SAML 2.0 Profile for OAuth 2.0: Defines how SAML 2.0 assertions can be used for client authentication and authorization grants
 - **RFC 7523** - JWT Profile for OAuth 2.0 Client Authentication and Authorization Grants: Defines how JWTs can be used for client authentication and authorization grants
 - **RFC 7636** - PKCE: Proof Key for Code Exchange, security extension for public clients
+- **RFC 7628** - SASL OAuth Mechanisms: Defines SASL mechanisms (OAUTHBEARER and OAUTH10A) for using OAuth in non-HTTP-based protocols like IMAP and SMTP
 - **RFC 7591** - Dynamic Client Registration: Allows clients to register themselves with authorization servers
 - **RFC 7592** - Dynamic Client Registration Management Protocol: Defines how clients can manage their dynamically registered OAuth 2.0 client configurations
 - **OAuth Client ID Metadata Document (Draft)**: Defines a method for clients to publish metadata about themselves at a well-known location, enabling authorization servers and resource servers to discover client configuration

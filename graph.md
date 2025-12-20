@@ -35,6 +35,7 @@ graph LR
     RFC7522["SAML 2.0 Profile for OAuth 2.0 (RFC 7522)"]
     RFC7523["JWT Profile for OAuth 2.0 Client Authentication and Authorization Grants (RFC 7523)"]
     RFC7636["PKCE for OAuth 2.0 (RFC 7636)"]
+    RFC7628["SASL OAuth Mechanisms (RFC 7628)"]
     RFC7009["OAuth 2.0 Token Revocation (RFC 7009)"]
     RFC7591["Dynamic Client Registration (RFC 7591)"]
     RFC7592["Dynamic Client Registration Management (RFC 7592)"]
@@ -114,6 +115,9 @@ graph LR
   RFC7523 --> RFC7521
   RFC7523 --> RFC7519
   RFC7636 --> RFC6749
+  RFC7628 --> RFC6749
+  RFC7628 --> RFC6750
+  RFC7628 --> RFC7591
   RFC7591 --> RFC6749
   RFC7592 --> RFC7591
   OAuth2_ClientIDMeta --> RFC6749
@@ -270,6 +274,7 @@ graph LR
   click RFC7522 "https://datatracker.ietf.org/doc/html/rfc7522" "SAML 2.0 Profile for OAuth 2.0 (RFC 7522)"
   click RFC7523 "https://datatracker.ietf.org/doc/html/rfc7523" "JWT Profile for OAuth 2.0 Client Authentication and Authorization Grants (RFC 7523)"
   click RFC7636 "https://datatracker.ietf.org/doc/html/rfc7636" "PKCE (RFC 7636)"
+  click RFC7628 "https://datatracker.ietf.org/doc/html/rfc7628" "SASL OAuth Mechanisms (RFC 7628)"
   click RFC7591 "https://datatracker.ietf.org/doc/html/rfc7591" "Dynamic Client Registration (RFC 7591)"
   click RFC7592 "https://datatracker.ietf.org/doc/html/rfc7592" "Dynamic Client Registration Management (RFC 7592)"
   click OAuth2_ClientIDMeta "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-client-id-metadata-document-00" "OAuth Client ID Metadata Document (Draft)"
