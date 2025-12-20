@@ -75,6 +75,8 @@ Each node in the graph is clickable and links directly to the official specifica
 - **OAuth 2.0 Proof-of-Possession (PoP) Security Architecture (Draft)**: Provides architectural guidance and security considerations for implementing proof-of-possession mechanisms in OAuth 2.0
 - **OAuth 2.0 Proof-of-Possession: Authorization Server to Client Key Distribution (Draft)**: Defines how authorization servers can securely distribute keys to clients for proof-of-possession token binding
 - **A Method for Signing HTTP Requests for OAuth (Draft)**: Defines a method for signing HTTP requests using OAuth credentials, enabling request integrity and authenticity verification
+- **RFC 9200** - ACE-OAuth Framework for Constrained Environments: Adapts OAuth 2.0 for IoT and constrained devices, defining an authentication and authorization framework (ACE) using CoAP, CBOR, COSE, and CWT for resource-constrained environments
+- **RFC 9201** - Additional OAuth Parameters for ACE: Defines additional parameters for OAuth 2.0 token and introspection endpoints when used with ACE, including proof-of-possession key parameters (req_cnf, cnf, rs_cnf)
 - **RFC 9700** - OAuth 2.0 Security Best Current Practice: Comprehensive security guidelines and best practices for OAuth 2.0 implementations, consolidating lessons learned and security considerations
 - **OAuth 2.0 Multiple Response Type Encoding Practices**: Defines encoding for multiple response types in OAuth 2.0 authorization responses
 - **OAuth 2.0 Form Post Response Mode**: Defines an OAuth 2.0 response mode that enables authorization responses to be delivered via an HTML form POST to the client, providing enhanced security for response data transmission

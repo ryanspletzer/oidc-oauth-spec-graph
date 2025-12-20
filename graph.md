@@ -68,6 +68,8 @@ graph LR
     OAuth2_PoPArch["OAuth 2.0 Proof-of-Possession (PoP) Security Architecture (Draft)"]
     OAuth2_PoPKeyDist["OAuth 2.0 Proof-of-Possession: Authorization Server to Client Key Distribution (Draft)"]
     OAuth2_SignedHTTP["A Method for Signing HTTP Requests for OAuth (Draft)"]
+    RFC9200["ACE-OAuth Framework for Constrained Environments (RFC 9200)"]
+    RFC9201["Additional OAuth Parameters for ACE (RFC 9201)"]
     RFC9700["OAuth 2.0 Security Best Current Practice (RFC 9700)"]
     OAuth2_MultiResp["OAuth 2.0 Multiple Response Type Encoding Practices"]
     OAuth2_FormPost["OAuth 2.0 Form Post Response Mode"]
@@ -171,6 +173,13 @@ graph LR
   OAuth2_PoPKeyDist --> RFC7519
   OAuth2_SignedHTTP --> RFC6749
   OAuth2_SignedHTTP --> RFC7519
+  RFC9200 --> RFC6749
+  RFC9200 --> RFC6750
+  RFC9200 --> RFC7252
+  RFC9200 --> RFC8392
+  RFC9200 --> RFC8152
+  RFC9201 --> RFC9200
+  RFC9201 --> RFC8747
   RFC9700 --> RFC6749
   RFC9700 --> RFC6750
   OAuth2_MultiResp --> RFC6749
@@ -314,6 +323,8 @@ graph LR
   click OAuth2_PoPArch "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-pop-architecture-08" "OAuth 2.0 Proof-of-Possession (PoP) Security Architecture (Draft)"
   click OAuth2_PoPKeyDist "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-pop-key-distribution-02" "OAuth 2.0 Proof-of-Possession: Authorization Server to Client Key Distribution (Draft)"
   click OAuth2_SignedHTTP "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-signed-http-request-03" "A Method for Signing HTTP Requests for OAuth (Draft)"
+  click RFC9200 "https://datatracker.ietf.org/doc/html/rfc9200" "ACE-OAuth Framework for Constrained Environments (RFC 9200)"
+  click RFC9201 "https://datatracker.ietf.org/doc/html/rfc9201" "Additional OAuth Parameters for ACE (RFC 9201)"
   click RFC9700 "https://datatracker.ietf.org/doc/html/rfc9700" "OAuth 2.0 Security Best Current Practice (RFC 9700)"
   click OAuth2_MultiResp "https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html" "OAuth 2.0 Multiple Response Type Encoding Practices"
   click OAuth2_FormPost "https://openid.net/specs/oauth-v2-form-post-response-mode-1_0.html" "OAuth 2.0 Form Post Response Mode"
