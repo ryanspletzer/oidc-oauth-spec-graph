@@ -90,6 +90,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 7517** - JSON Web Key (JWK): Format for representing cryptographic keys in JSON
 - **RFC 7518** - JSON Web Algorithms (JWA): Cryptographic algorithms for JOSE
 - **RFC 7519** - JSON Web Token (JWT): Compact, URL-safe means of representing claims
+- **RFC 7800** - Proof-of-Possession Key Semantics for JWTs: Defines how to declare in a JWT that the presenter possesses a particular proof-of-possession key and how recipients can cryptographically confirm possession
 - **RFC 8725** - JSON Web Token Best Current Practices: Security best practices and recommendations for JWT implementations
 - **RFC 9068** - JWT Profile for OAuth 2.0 Access Tokens: Standardizes JWT-based access tokens
 - **RFC 9728** - JWT Profile for OAuth 2.0 Authorization Server Issuer Identification: Defines how to prevent mix-up attacks by including issuer identification in JWT responses
