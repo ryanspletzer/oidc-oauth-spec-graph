@@ -49,6 +49,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **OAuth Client ID Metadata Document (Draft)**: Defines a method for clients to publish metadata about themselves at a well-known location, enabling authorization servers and resource servers to discover client configuration
 - **OAuth 2.0 Client ID Scheme (Draft)**: Defines a mechanism for encoding client type and metadata directly in the client identifier, enabling authorization servers to derive client properties without additional lookups
 - **RFC 7662** - OAuth 2.0 Token Introspection: Defines a method for resource servers to query an authorization server about the state and metadata of an OAuth 2.0 token
+- **RFC 9701** - JWT Response for OAuth Token Introspection: Extends the token introspection endpoint with the capability to return responses as signed and optionally encrypted JWTs, providing stronger assurance for resource servers
 - **RFC 8252** - OAuth 2.0 for Native Apps: Best practices for OAuth 2.0 in native applications, including mobile and desktop apps
 - **RFC 8414** - Authorization Server Metadata: Standardizes discovery of authorization server capabilities
 - **OAuth 2.0 Authorization Server Discovery Metadata (Draft)**: Extends RFC 8414 with additional metadata for authorization server discovery and capabilities advertisement
