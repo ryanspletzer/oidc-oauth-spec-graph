@@ -95,6 +95,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 7800** - Proof-of-Possession Key Semantics for JWTs: Defines how to declare in a JWT that the presenter possesses a particular proof-of-possession key and how recipients can cryptographically confirm possession
 - **RFC 8176** - Authentication Method Reference Values: Establishes a registry for "amr" (Authentication Methods References) claim values and defines standard identifiers for authentication methods such as biometrics, passwords, OTP, multi-factor authentication, and hardware keys
 - **RFC 8725** - JSON Web Token Best Current Practices: Security best practices and recommendations for JWT implementations
+- **RFC 9278** - JWK Thumbprint URI: Defines a URI format for representing JWK Thumbprint values, enabling JWK Thumbprints to be used as key identifiers in contexts requiring URIs (e.g., as subject identifiers in Self-Issued OpenID Provider v2)
 - **RFC 9068** - JWT Profile for OAuth 2.0 Access Tokens: Standardizes JWT-based access tokens
 - **RFC 9728** - JWT Profile for OAuth 2.0 Authorization Server Issuer Identification: Defines how to prevent mix-up attacks by including issuer identification in JWT responses
 - **RFC 9901** - Selective Disclosure for JSON Web Tokens (SD-JWT): Defines a mechanism for selective disclosure of JWT claims enabling minimal disclosure and privacy-preserving credential presentations
