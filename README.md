@@ -92,6 +92,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 8725** - JSON Web Token Best Current Practices: Security best practices and recommendations for JWT implementations
 - **RFC 9068** - JWT Profile for OAuth 2.0 Access Tokens: Standardizes JWT-based access tokens
 - **RFC 9728** - JWT Profile for OAuth 2.0 Authorization Server Issuer Identification: Defines how to prevent mix-up attacks by including issuer identification in JWT responses
+- **RFC 9901** - Selective Disclosure for JSON Web Tokens (SD-JWT): Defines a mechanism for selective disclosure of JWT claims enabling minimal disclosure and privacy-preserving credential presentations
 
 ### OpenID Connect Identity Layer
 
