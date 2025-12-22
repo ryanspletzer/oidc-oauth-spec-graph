@@ -34,6 +34,7 @@ graph LR
     RFC7521["Assertion Framework for OAuth 2.0 (RFC 7521)"]
     RFC7522["SAML 2.0 Profile for OAuth 2.0 (RFC 7522)"]
     RFC7523["JWT Profile for OAuth 2.0 Client Authentication and Authorization Grants (RFC 7523)"]
+    OAuth2_Kerberos["Kerberos V5 Profile for OAuth 2.0 (Draft)"]
     RFC7636["PKCE for OAuth 2.0 (RFC 7636)"]
     RFC7628["SASL OAuth Mechanisms (RFC 7628)"]
     RFC7009["OAuth 2.0 Token Revocation (RFC 7009)"]
@@ -120,6 +121,7 @@ graph LR
   RFC7522 --> RFC7521
   RFC7523 --> RFC7521
   RFC7523 --> RFC7519
+  OAuth2_Kerberos --> RFC7521
   RFC7636 --> RFC6749
   RFC7628 --> RFC6749
   RFC7628 --> RFC6750
@@ -298,6 +300,7 @@ graph LR
   click RFC7521 "https://datatracker.ietf.org/doc/html/rfc7521" "Assertion Framework for OAuth 2.0 (RFC 7521)"
   click RFC7522 "https://datatracker.ietf.org/doc/html/rfc7522" "SAML 2.0 Profile for OAuth 2.0 (RFC 7522)"
   click RFC7523 "https://datatracker.ietf.org/doc/html/rfc7523" "JWT Profile for OAuth 2.0 Client Authentication and Authorization Grants (RFC 7523)"
+  click OAuth2_Kerberos "https://datatracker.ietf.org/doc/html/draft-hardjono-oauth-kerberos-01" "Kerberos V5 Profile for OAuth 2.0 (Draft)"
   click RFC7636 "https://datatracker.ietf.org/doc/html/rfc7636" "PKCE (RFC 7636)"
   click RFC7628 "https://datatracker.ietf.org/doc/html/rfc7628" "SASL OAuth Mechanisms (RFC 7628)"
   click RFC7591 "https://datatracker.ietf.org/doc/html/rfc7591" "Dynamic Client Registration (RFC 7591)"

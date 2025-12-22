@@ -42,6 +42,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 7521** - Assertion Framework for OAuth 2.0 Client Authentication and Authorization Grants: Common framework for using assertions with OAuth 2.0
 - **RFC 7522** - SAML 2.0 Profile for OAuth 2.0: Defines how SAML 2.0 assertions can be used for client authentication and authorization grants
 - **RFC 7523** - JWT Profile for OAuth 2.0 Client Authentication and Authorization Grants: Defines how JWTs can be used for client authentication and authorization grants
+- **Kerberos V5 Profile for OAuth 2.0 (Draft)**: Defines how Kerberos V5 tickets can be used for client authentication and authorization grants in OAuth 2.0
 - **RFC 7636** - PKCE: Proof Key for Code Exchange, security extension for public clients
 - **RFC 7628** - SASL OAuth Mechanisms: Defines SASL mechanisms (OAUTHBEARER and OAUTH10A) for using OAuth in non-HTTP-based protocols like IMAP and SMTP
 - **RFC 7591** - Dynamic Client Registration: Allows clients to register themselves with authorization servers
