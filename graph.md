@@ -78,6 +78,7 @@ graph LR
     OAuth2_AttestAuth["OAuth 2.0 Attestation-Based Client Authentication (Draft)"]
     OAuth2_BrowserApps["OAuth 2.0 for Browser-Based Applications (Draft)"]
     OAuth2_JWTState["Encoding claims in the OAuth 2 state parameter using a JWT (Draft)"]
+    OAuth2_TokenBinding["OAuth 2.0 Token Binding (Draft)"]
     UMA_Profile["User-Managed Access (UMA) Profile of OAuth 2.0 (Draft)"]
   end
 
@@ -198,6 +199,8 @@ graph LR
   OAuth2_BrowserApps --> RFC7636
   OAuth2_JWTState --> RFC6749
   OAuth2_JWTState --> RFC7519
+  OAuth2_TokenBinding --> RFC6749
+  OAuth2_TokenBinding --> RFC6750
   UMA_Profile --> RFC6749
   UMA_Profile --> RFC6750
 
@@ -343,6 +346,7 @@ graph LR
   click OAuth2_AttestAuth "https://datatracker.ietf.org/doc/draft-ietf-oauth-attestation-based-client-auth/" "OAuth 2.0 Attestation-Based Client Authentication (Draft)"
   click OAuth2_BrowserApps "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps" "OAuth 2.0 for Browser-Based Applications (Draft)"
   click OAuth2_JWTState "https://datatracker.ietf.org/doc/draft-bradley-oauth-jwt-encoded-state/" "Encoding claims in the OAuth 2 state parameter using a JWT (Draft)"
+  click OAuth2_TokenBinding "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-token-binding-08" "OAuth 2.0 Token Binding (Draft)"
   click UMA_Profile "https://datatracker.ietf.org/doc/html/draft-hardjono-oauth-umacore-14" "User-Managed Access (UMA) Profile of OAuth 2.0 (Draft)"
 
   click RFC7515 "https://datatracker.ietf.org/doc/html/rfc7515" "JSON Web Signature (JWS) (RFC 7515)"
