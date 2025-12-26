@@ -112,6 +112,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **OpenID Connect Front-Channel Logout 1.0**: Defines a front-channel logout mechanism that allows relying parties to be notified when a user logs out
 - **OpenID Connect Back-Channel Logout 1.0**: Defines a back-channel logout mechanism using direct server-to-server communication for logout notifications
 - **OpenID Connect RP-Initiated Logout 1.0**: Defines how relying parties can initiate logout of the end-user at the OpenID provider
+- **OpenID Connect Token Bound Authentication 1.0**: Defines how to apply Token Binding protocol to OpenID Connect authentication, enabling cryptographic binding of ID tokens and authentication sessions to TLS connections to prevent token export and replay attacks
 - **OpenID Connect for Identity Assurance 1.0**: Framework for exchanging verified identity claims with assurance levels and evidence of identity verification
 - **OpenID Connect for Identity Assurance Claims Registration 1.0**: Specifies how OpenID Providers advertise and register verified claims metadata so relying parties can request Identity Assurance claims with aligned semantics
 - **OpenID Identity Assurance Schema Definition 1.0**: Provides the reusable JSON schema components for representing verified claims content defined by OpenID Identity Assurance, enabling consistent data exchange across providers

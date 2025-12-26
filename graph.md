@@ -12,6 +12,7 @@ graph LR
     OIDC_FrontLogout["OpenID Connect Front-Channel Logout 1.0"]
     OIDC_BackLogout["OpenID Connect Back-Channel Logout 1.0"]
     OIDC_RPLogout["OpenID Connect RP-Initiated Logout 1.0"]
+    OIDC_TokenBound["OpenID Connect Token Bound Authentication 1.0"]
     OIDC_IDA["OpenID Connect for Identity Assurance 1.0"]
     OIDC_IDA_Schema["OpenID Identity Assurance Schema Definition 1.0"]
     OIDC_IDA_Claims["OpenID Connect for Identity Assurance Claims Registration 1.0"]
@@ -226,6 +227,8 @@ graph LR
   OIDC_BackLogout --> OIDC_Session
   OIDC_RPLogout --> OIDC_Core
   OIDC_RPLogout --> OIDC_Session
+  OIDC_TokenBound --> OIDC_Core
+  OIDC_TokenBound --> OAuth2_TokenBinding
   OIDC_IDA --> OIDC_Core
   OIDC_IDA_Schema --> OIDC_IDA
   OIDC_IDA_Claims --> OIDC_IDA
@@ -369,6 +372,7 @@ graph LR
   click OIDC_FrontLogout "https://openid.net/specs/openid-connect-frontchannel-1_0.html" "OpenID Connect Front-Channel Logout 1.0"
   click OIDC_BackLogout "https://openid.net/specs/openid-connect-backchannel-1_0.html" "OpenID Connect Back-Channel Logout 1.0"
   click OIDC_RPLogout "https://openid.net/specs/openid-connect-rpinitiated-1_0.html" "OpenID Connect RP-Initiated Logout 1.0"
+  click OIDC_TokenBound "https://openid.net/specs/openid-connect-token-bound-authentication-1_0.html" "OpenID Connect Token Bound Authentication 1.0"
   click OIDC_IDA "https://openid.net/specs/openid-connect-4-identity-assurance-1_0.html" "OpenID Connect for Identity Assurance 1.0"
   click OIDC_IDA_Schema "https://openid.net/specs/openid-ida-verified-claims-1_0-final.html" "OpenID Identity Assurance Schema Definition 1.0"
   click OIDC_IDA_Claims "https://openid.net/specs/openid-connect-4-ida-claims-1_0-final.html" "OpenID Connect for Identity Assurance Claims Registration 1.0"
