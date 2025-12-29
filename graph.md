@@ -25,6 +25,7 @@ graph LR
     OIDC_RISC_Events["OpenID RISC Event Types 1.0"]
     OID4VCI["OpenID for Verifiable Credential Issuance 1.0"]
     OID4VP["OpenID for Verifiable Presentations 1.0"]
+    SIOPv2["Self-Issued OpenID Provider v2 (Draft)"]
   end
 
   %% --- OAuth 2.0 RFCs ---
@@ -273,6 +274,17 @@ graph LR
   OID4VP --> OAuth2_MultiResp
   OID4VP --> OIDC_Core
   OID4VP --> OID4VCI
+  SIOPv2 --> RFC6749
+  SIOPv2 --> RFC7515
+  SIOPv2 --> RFC7517
+  SIOPv2 --> RFC7519
+  SIOPv2 --> RFC9101
+  SIOPv2 --> RFC9278
+  SIOPv2 --> OAuth2_MultiResp
+  SIOPv2 --> OIDC_Core
+  SIOPv2 --> OIDC_Discovery
+  SIOPv2 --> OIDC_Reg
+  SIOPv2 --> OID4VP
 
   %% ---- Edges: JOSE internal references ----
   RFC7515 --> RFC7518
@@ -412,6 +424,7 @@ graph LR
   click OIDC_RISC_Events "https://openid.net/specs/openid-risc-event-types-1_0.html" "OpenID RISC Event Types 1.0"
   click OID4VCI "https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html" "OpenID for Verifiable Credential Issuance 1.0"
   click OID4VP "https://openid.net/specs/openid-4-verifiable-presentations-1_0.html" "OpenID for Verifiable Presentations 1.0"
+  click SIOPv2 "https://openid.net/specs/openid-connect-self-issued-v2-1_0-13.html" "Self-Issued OpenID Provider v2 (Draft)"
 
   click UMA_Grant "https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-grant-2.0.html" "UMA 2.0 Grant for OAuth 2.0"
   click UMA_FedAuthz "https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-federated-authz-2.0.html" "UMA 2.0 Federated Authorization"

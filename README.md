@@ -125,6 +125,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **OpenID RISC Event Types 1.0**: Defines specific event types for RISC including account security events (credential changes, account disabled/enabled, purged), identifier events (changed, recycled), opt-out management, recovery events, and session revocation
 - **OpenID for Verifiable Credential Issuance 1.0**: Defines an OAuth-protected API for the issuance of Verifiable Credentials, enabling Credential Issuers to issue credentials in various formats (SD-JWT VC, ISO mdoc, W3C VCDM) to Wallet applications using OAuth 2.0 authorization flows
 - **OpenID for Verifiable Presentations 1.0**: Defines a mechanism on top of OAuth 2.0 for requesting and presenting Verifiable Credentials, enabling Wallets to present credentials to Verifiers using the Digital Credentials Query Language (DCQL)
+- **Self-Issued OpenID Provider v2 (Draft)**: Extends OpenID Connect with the concept of a Self-Issued OpenID Provider (SIOP), an OP controlled by the End-User that allows authentication with Self-Issued ID Tokens signed with keys under the End-User's control
 
 ### UMA (User-Managed Access)
 
