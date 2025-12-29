@@ -23,6 +23,7 @@ graph LR
     OIDC_RISC_Spec["OpenID RISC Profile Specification 1.0"]
     OIDC_RISC_Profile["OpenID RISC Profile of IETF Security Events 1.0"]
     OIDC_RISC_Events["OpenID RISC Event Types 1.0"]
+    OID4VCI["OpenID for Verifiable Credential Issuance 1.0"]
   end
 
   %% --- OAuth 2.0 RFCs ---
@@ -246,6 +247,19 @@ graph LR
   OIDC_RISC_Events --> OIDC_RISC_Profile
   RISC_UseCases --> OIDC_RISC_Spec
   RISC_UseCases --> OIDC_RISC_Profile
+  OID4VCI --> RFC6749
+  OID4VCI --> RFC7519
+  OID4VCI --> RFC7515
+  OID4VCI --> RFC7516
+  OID4VCI --> RFC7517
+  OID4VCI --> RFC7591
+  OID4VCI --> RFC7636
+  OID4VCI --> RFC8414
+  OID4VCI --> RFC9126
+  OID4VCI --> RFC9396
+  OID4VCI --> RFC9449
+  OID4VCI --> RFC8725
+  OID4VCI --> OIDC_Core
 
   %% ---- Edges: JOSE internal references ----
   RFC7515 --> RFC7518
@@ -383,6 +397,7 @@ graph LR
   click OIDC_RISC_Spec "https://openid.net/specs/openid-risc-1_0-final.html" "OpenID RISC Profile Specification 1.0"
   click OIDC_RISC_Profile "https://openid.net/specs/openid-risc-profile-1_0.html" "OpenID RISC Profile of IETF Security Events 1.0"
   click OIDC_RISC_Events "https://openid.net/specs/openid-risc-event-types-1_0.html" "OpenID RISC Event Types 1.0"
+  click OID4VCI "https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html" "OpenID for Verifiable Credential Issuance 1.0"
 
   click UMA_Grant "https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-grant-2.0.html" "UMA 2.0 Grant for OAuth 2.0"
   click UMA_FedAuthz "https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-federated-authz-2.0.html" "UMA 2.0 Federated Authorization"

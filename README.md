@@ -123,6 +123,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **OpenID RISC Profile Specification 1.0**: Establishes the OpenID Risk Incident Sharing and Coordination model, mapping RISC event semantics to Security Event Tokens and HTTP delivery so providers can exchange account and credential risk signals
 - **OpenID RISC Profile of IETF Security Events 1.0**: Profiles RFC 8417 (SET), RFC 8935 (push delivery), and RFC 8936 (poll delivery) for Risk Incident Sharing and Coordination, defining subject identifiers, transmitter configuration discovery, and management APIs for event streams
 - **OpenID RISC Event Types 1.0**: Defines specific event types for RISC including account security events (credential changes, account disabled/enabled, purged), identifier events (changed, recycled), opt-out management, recovery events, and session revocation
+- **OpenID for Verifiable Credential Issuance 1.0**: Defines an OAuth-protected API for the issuance of Verifiable Credentials, enabling Credential Issuers to issue credentials in various formats (SD-JWT VC, ISO mdoc, W3C VCDM) to Wallet applications using OAuth 2.0 authorization flows
 
 ### UMA (User-Managed Access)
 
