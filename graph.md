@@ -100,6 +100,7 @@ graph LR
     RFC9068["JWT Profile for OAuth 2.0 Access Tokens (RFC 9068)"]
     RFC9728["JWT Profile for OAuth 2.0 Authorization Server Issuer Identification (RFC 9728)"]
     RFC9901["Selective Disclosure for JSON Web Tokens (RFC 9901)"]
+    SDJWT_VC["SD-JWT-based Verifiable Credentials (Draft)"]
   end
 
   %% --- Discovery / Metadata ---
@@ -326,6 +327,12 @@ graph LR
   RFC9901 --> RFC7515
   RFC9901 --> RFC8725
 
+  SDJWT_VC --> RFC9901
+  SDJWT_VC --> RFC7515
+  SDJWT_VC --> RFC7517
+  SDJWT_VC --> RFC7519
+  SDJWT_VC --> RFC7800
+
   %% ---- Edges: UMA depending on OAuth / JWT ----
   UMA_Grant --> RFC6749
   UMA_Grant --> RFC6750
@@ -403,6 +410,7 @@ graph LR
   click RFC9068 "https://datatracker.ietf.org/doc/html/rfc9068" "JWT Profile for OAuth 2.0 Access Tokens (RFC 9068)"
   click RFC9728 "https://datatracker.ietf.org/doc/html/rfc9728" "JWT Profile for OAuth 2.0 Authorization Server Issuer Identification (RFC 9728)"
   click RFC9901 "https://datatracker.ietf.org/doc/html/rfc9901" "Selective Disclosure for JSON Web Tokens (RFC 9901)"
+  click SDJWT_VC "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-sd-jwt-vc" "SD-JWT-based Verifiable Credentials (Draft)"
 
   click OIDC_Core "https://openid.net/specs/openid-connect-core-1_0.html" "OpenID Connect Core 1.0"
   click OIDC_Discovery "https://openid.net/specs/openid-connect-discovery-1_0.html" "OpenID Connect Discovery 1.0"

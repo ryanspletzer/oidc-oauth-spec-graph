@@ -102,6 +102,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 9068** - JWT Profile for OAuth 2.0 Access Tokens: Standardizes JWT-based access tokens
 - **RFC 9728** - JWT Profile for OAuth 2.0 Authorization Server Issuer Identification: Defines how to prevent mix-up attacks by including issuer identification in JWT responses
 - **RFC 9901** - Selective Disclosure for JSON Web Tokens (SD-JWT): Defines a mechanism for selective disclosure of JWT claims enabling minimal disclosure and privacy-preserving credential presentations
+- **SD-JWT-based Verifiable Credentials (SD-JWT VC) (Draft)**: Defines a credential format for Verifiable Credentials using SD-JWT, enabling selective disclosure of identity claims while providing a standardized data model with Type Metadata for credential display and validation
 
 ### OpenID Connect Identity Layer
 
