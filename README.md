@@ -87,6 +87,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **Encoding claims in the OAuth 2 state parameter using a JWT (Draft)**: Defines how to encode claims in the OAuth 2.0 state parameter as a JWT, enabling secure passing of additional information between authorization request and response
 - **OAuth 2.0 Token Binding (Draft)**: Defines how to apply Token Binding protocol to OAuth 2.0, enabling cryptographic binding of security tokens to TLS connections to prevent token export and replay attacks
 - **User-Managed Access (UMA) Profile of OAuth 2.0 (Draft)**: Defines an OAuth-based access management protocol that enables resource owners to control access to their protected resources by creating authorization policies at an authorization server
+- **OAuth Identity and Authorization Chaining Across Domains (Draft)**: Defines a mechanism for chaining OAuth 2.0 authorization flows across multiple authorization servers in different domains, enabling delegation scenarios where a user authorizes access to resources across domain boundaries using token exchange and nested authorization flows
 
 ### JOSE/JWT Security
 
