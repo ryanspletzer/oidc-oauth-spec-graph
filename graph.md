@@ -85,6 +85,7 @@ graph LR
     OAuth2_TokenBinding["OAuth 2.0 Token Binding (Draft)"]
     UMA_Profile["User-Managed Access (UMA) Profile of OAuth 2.0 (Draft)"]
     OAuth2_IdentityChaining["OAuth Identity and Authorization Chaining Across Domains (Draft)"]
+    OAuth2_IdentityAssertion["Identity Assertion Authorization Grant (Draft)"]
   end
 
   %% --- JOSE / JWT ---
@@ -212,6 +213,10 @@ graph LR
   OAuth2_IdentityChaining --> RFC6749
   OAuth2_IdentityChaining --> RFC6750
   OAuth2_IdentityChaining --> RFC8693
+  OAuth2_IdentityAssertion --> RFC6749
+  OAuth2_IdentityAssertion --> RFC8693
+  OAuth2_IdentityAssertion --> RFC7523
+  OAuth2_IdentityAssertion --> RFC7519
 
   %% ---- Edges: OIDC depending on OAuth / JWT ----
   OIDC_Core --> RFC6749
@@ -402,6 +407,7 @@ graph LR
   click OAuth2_TokenBinding "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-token-binding-08" "OAuth 2.0 Token Binding (Draft)"
   click UMA_Profile "https://datatracker.ietf.org/doc/html/draft-hardjono-oauth-umacore-14" "User-Managed Access (UMA) Profile of OAuth 2.0 (Draft)"
   click OAuth2_IdentityChaining "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-identity-chaining-06" "OAuth Identity and Authorization Chaining Across Domains (Draft)"
+  click OAuth2_IdentityAssertion "https://datatracker.ietf.org/doc/html/draft-parecki-oauth-identity-assertion-authz-grant-05" "Identity Assertion Authorization Grant (Draft)"
 
   click RFC7515 "https://datatracker.ietf.org/doc/html/rfc7515" "JSON Web Signature (JWS) (RFC 7515)"
   click RFC7516 "https://datatracker.ietf.org/doc/html/rfc7516" "JSON Web Encryption (JWE) (RFC 7516)"
