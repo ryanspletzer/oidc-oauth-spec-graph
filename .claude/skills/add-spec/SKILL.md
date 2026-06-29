@@ -23,7 +23,11 @@ page yourself) to obtain:
 - the **normative references** to specs already in the graph.
 
 Edges must reflect what the document actually references — confirm against the
-spec text, not memory.
+spec text, not memory. Use the IETF datatracker **structured references view**
+(`.../doc/<doc>/references/`, which separates normative from informative) for
+RFCs and drafts; for `openid.net` specs use the GitHub source markdown
+(`[@!ref]` normative, `[@ref]`/`[@?ref]` informative). Draw **all** normative
+references to in-graph specs (completeness); normative only.
 
 ## 2. Pick id, label, and subgraph
 
@@ -54,5 +58,6 @@ in one sentence, consistent with the existing entries.
 
 - Node count must equal click-link count:
   `grep -cE '^\s+[A-Za-z0-9_]+\["' graph.md` vs `grep -cE '^\s+click ' graph.md`.
-- No edge may reference an undefined node id.
+- No edge may reference an undefined node id, except the four allowlisted ACE
+  externals (`RFC7252`, `RFC8152`, `RFC8392`, `RFC8747`).
 - Run the markdown linter (`mdlinter` skill or `markdownlint-cli2`) and fix.

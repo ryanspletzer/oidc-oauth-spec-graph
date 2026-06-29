@@ -262,6 +262,9 @@ graph LR
   OAuth2_SignedHTTP --> OAuth2_PoPArch
   OAuth2_SignedHTTP --> OAuth2_PoPKeyDist
 
+  %% ACE references constrained-environment specs left out of scope:
+  %% RFC7252 (CoAP), RFC8152 (COSE), RFC8392 (CWT), RFC8747 (PoP for CWT).
+  %% These four targets are intentionally undefined nodes — do not remove.
   RFC9200 --> RFC6749
   RFC9200 --> RFC6750
   RFC9200 --> RFC7252
