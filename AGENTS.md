@@ -28,8 +28,12 @@ must stay in sync:
 
 1. **Node definition** inside the correct `subgraph`
    (`OpenID_Connect`, `OAuth_2_0_RFCs`, `JOSE_JWT`, `Discovery_Metadata`, `UMA`).
-2. **Dependency edges** (`A --> B`, meaning "A references/builds upon B")
-   under the matching `%% ---- Edges ...` comment block.
+2. **Dependency edges** (`A --> B`, meaning "A **normatively** references /
+   builds upon B") under the matching `%% ---- Edges ...` comment block.
+   Edges track **normative** references only — not informative ones. Verify
+   against the IETF datatracker structured references view
+   (`https://datatracker.ietf.org/doc/<rfc-or-draft>/references/`), which
+   separates normative from informative, rather than scraping the prose.
 3. **Clickable link** in the `click <NodeId> "<url>" "<tooltip>"` section,
    with a tooltip that matches the node label.
 4. **README** bullet under the matching `### Specification Categories` heading.
