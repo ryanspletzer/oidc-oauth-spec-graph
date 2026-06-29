@@ -120,106 +120,227 @@ graph LR
 
   %% ---- Edges: OAuth 2.0 internal references ----
   OAuth2_1 --> RFC6749
-  OAuth2_1 --> RFC7636
+  OAuth2_1 --> RFC6750
   OAuth2_1 --> RFC8252
-  RFC6750 --> RFC6749
-  RFC6755 --> RFC6749
+  OAuth2_1 --> RFC9207
+  OAuth2_1 --> RFC9700
+
   RFC6819 --> RFC6749
   RFC6819 --> RFC6750
   RFC7009 --> RFC6749
-  RFC7521 --> RFC6749
-  RFC7522 --> RFC7521
-  RFC7523 --> RFC7521
+
+  RFC7523 --> RFC7518
   RFC7523 --> RFC7519
-  OAuth2_Kerberos --> RFC7521
+  RFC7523 --> RFC7521
+
   RFC7636 --> RFC6749
+
   RFC7628 --> RFC6749
   RFC7628 --> RFC6750
   RFC7628 --> RFC7591
+
   RFC7591 --> RFC6749
+  RFC7591 --> RFC7515
+  RFC7591 --> RFC7519
+  RFC7592 --> RFC6749
+  RFC7592 --> RFC6750
   RFC7592 --> RFC7591
+
   OAuth2_ClientIDMeta --> RFC6749
   OAuth2_ClientIDMeta --> RFC7591
+  OAuth2_ClientIDMeta --> RFC8414
+  OAuth2_ClientIDMeta --> RFC9700
   OAuth2_ClientIDScheme --> RFC6749
+  OAuth2_ClientIDScheme --> RFC7515
+  OAuth2_ClientIDScheme --> RFC8414
   RFC7662 --> RFC6749
-  RFC7662 --> RFC6750
-  RFC9701 --> RFC7662
-  RFC9701 --> RFC7519
+  RFC7662 --> RFC7519
   RFC9701 --> RFC7515
   RFC9701 --> RFC7516
+  RFC9701 --> RFC7518
+  RFC9701 --> RFC7519
+  RFC9701 --> RFC7591
+  RFC9701 --> RFC7662
+  RFC9701 --> RFC8414
+  RFC9701 --> RFC9700
   RFC8252 --> RFC6749
-  RFC8252 --> RFC7636
   RFC8414 --> RFC6749
+  RFC8414 --> RFC7033
+  RFC8414 --> RFC7515
+  RFC8414 --> RFC7516
+  RFC8414 --> RFC7517
+  RFC8414 --> RFC7519
   RFC8414 --> RFC7591
-  OAuth2_ASDiscovery --> RFC8414
+  RFC8414 --> RFC7636
+  RFC8414 --> RFC7662
+  RFC8417 --> RFC6749
+  RFC8417 --> RFC7515
   RFC8417 --> RFC7519
   RFC8628 --> RFC6749
+  RFC8628 --> RFC6755
+  RFC8935 --> RFC7515
+  RFC8935 --> RFC7519
   RFC8935 --> RFC8417
+  RFC8936 --> RFC7515
+  RFC8936 --> RFC7519
   RFC8936 --> RFC8417
+  RFC8936 --> RFC8935
   RFC9493 --> RFC7519
   RFC9493 --> RFC8417
+  SET_StreamMgmt --> RFC7519
   SET_StreamMgmt --> RFC8417
   SET_StreamMgmt --> RFC8935
   SET_StreamMgmt --> RFC8936
-  RISC_UseCases --> RFC8417
-  RISC_UseCases --> RFC8935
-  RISC_UseCases --> RFC8936
   RFC8693 --> RFC6749
-  RFC8693 --> RFC6750
+  RFC8693 --> RFC7519
+  RFC8693 --> RFC7662
   RFC8705 --> RFC6749
   RFC8705 --> RFC6750
+  RFC8705 --> RFC7519
+  RFC8705 --> RFC7591
+  RFC8705 --> RFC7662
+  RFC8705 --> RFC8414
   RFC8707 --> RFC6749
   RFC9101 --> RFC6749
+  RFC9101 --> RFC6750
+  RFC9101 --> RFC7515
+  RFC9101 --> RFC7516
+  RFC9101 --> RFC7518
   RFC9101 --> RFC7519
+  RFC9101 --> RFC8414
   RFC9126 --> RFC6749
+  RFC9126 --> RFC8414
+  RFC9126 --> RFC9101
   OAuth2_JARM --> RFC6749
+  OAuth2_JARM --> RFC7515
+  OAuth2_JARM --> RFC7516
   OAuth2_JARM --> RFC7519
+  OAuth2_JARM --> OAuth2_MultiResp
+  OAuth2_JARM --> OAuth2_FormPost
   RFC9207 --> RFC6749
+  RFC9207 --> RFC8414
   OAuth2_MixUpMit --> RFC6749
+  OAuth2_MixUpMit --> RFC7519
+
   OAuth2_IncrAuthz --> RFC6749
-  RFC9396 --> RFC6749
+  OAuth2_IncrAuthz --> RFC8414
+
+  RFC9396 --> RFC7519
+  RFC9396 --> RFC8414
+
   RFC9449 --> RFC6749
-  RFC9635 --> RFC6749
+  RFC9449 --> RFC6750
+  RFC9449 --> RFC7515
+  RFC9449 --> RFC7517
   RFC9449 --> RFC7519
+  RFC9449 --> RFC7638
+
+  RFC9635 --> RFC6749
+  RFC9635 --> RFC6750
+  RFC9635 --> RFC7515
+  RFC9635 --> RFC7517
+  RFC9635 --> RFC8705
+
   RFC9470 --> RFC6749
   RFC9470 --> RFC6750
+
   OAuth2_PoPArch --> RFC6749
+  OAuth2_PoPArch --> RFC7519
+  OAuth2_PoPArch --> RFC7662
+  OAuth2_PoPArch --> RFC7800
+  OAuth2_PoPArch --> OAuth2_PoPKeyDist
+  OAuth2_PoPArch --> OAuth2_SignedHTTP
+
   OAuth2_PoPKeyDist --> RFC6749
+  OAuth2_PoPKeyDist --> RFC7515
+  OAuth2_PoPKeyDist --> RFC7517
+  OAuth2_PoPKeyDist --> RFC7518
   OAuth2_PoPKeyDist --> RFC7519
+  OAuth2_PoPKeyDist --> RFC7800
+
   OAuth2_SignedHTTP --> RFC6749
+  OAuth2_SignedHTTP --> RFC6750
+  OAuth2_SignedHTTP --> RFC7515
   OAuth2_SignedHTTP --> RFC7519
+  OAuth2_SignedHTTP --> RFC7662
+  OAuth2_SignedHTTP --> OAuth2_PoPArch
+  OAuth2_SignedHTTP --> OAuth2_PoPKeyDist
+
   RFC9200 --> RFC6749
   RFC9200 --> RFC6750
   RFC9200 --> RFC7252
+  RFC9200 --> RFC7519
+  RFC9200 --> RFC7662
   RFC9200 --> RFC8392
   RFC9200 --> RFC8152
+  RFC9201 --> RFC6749
+  RFC9201 --> RFC8705
   RFC9201 --> RFC9200
   RFC9201 --> RFC8747
+
   RFC9700 --> RFC6749
   RFC9700 --> RFC6750
+  RFC9700 --> RFC8252
+  RFC9700 --> RFC8414
+  RFC9700 --> RFC8705
+
   OAuth2_MultiResp --> RFC6749
   OAuth2_FormPost --> RFC6749
-  OAuth2_AttestAuth --> RFC6749
+  OAuth2_FormPost --> OAuth2_MultiResp
+
+  OAuth2_AttestAuth --> RFC6750
+  OAuth2_AttestAuth --> RFC7515
   OAuth2_AttestAuth --> RFC7519
+  OAuth2_AttestAuth --> RFC7591
+  OAuth2_AttestAuth --> RFC7800
+  OAuth2_AttestAuth --> RFC8414
+  OAuth2_AttestAuth --> RFC8725
+  OAuth2_AttestAuth --> RFC9126
+  OAuth2_AttestAuth --> RFC9449
+  OAuth2_AttestAuth --> RFC9728
+
   OAuth2_BrowserApps --> RFC6749
+  OAuth2_BrowserApps --> RFC6750
   OAuth2_BrowserApps --> RFC7636
+  OAuth2_BrowserApps --> RFC9700
+
   OAuth2_JWTState --> RFC6749
+  OAuth2_JWTState --> RFC7515
   OAuth2_JWTState --> RFC7519
+
   OAuth2_TokenBinding --> RFC6749
-  OAuth2_TokenBinding --> RFC6750
+  OAuth2_TokenBinding --> RFC7519
+  OAuth2_TokenBinding --> RFC7591
+  OAuth2_TokenBinding --> RFC7662
+  OAuth2_TokenBinding --> RFC8414
+
   UMA_Profile --> RFC6749
-  UMA_Profile --> RFC6750
+
   OAuth2_IdentityChaining --> RFC6749
-  OAuth2_IdentityChaining --> RFC6750
+  OAuth2_IdentityChaining --> RFC7521
+  OAuth2_IdentityChaining --> RFC7523
+  OAuth2_IdentityChaining --> RFC8414
   OAuth2_IdentityChaining --> RFC8693
+  OAuth2_IdentityChaining --> RFC8707
+  OAuth2_IdentityChaining --> RFC9700
+  OAuth2_IdentityChaining --> RFC9728
+
   OAuth2_IdentityAssertion --> RFC6749
-  OAuth2_IdentityAssertion --> RFC8693
-  OAuth2_IdentityAssertion --> RFC7523
   OAuth2_IdentityAssertion --> RFC7519
+  OAuth2_IdentityAssertion --> RFC7521
+  OAuth2_IdentityAssertion --> RFC7523
+  OAuth2_IdentityAssertion --> RFC8414
+  OAuth2_IdentityAssertion --> RFC8693
+  OAuth2_IdentityAssertion --> RFC8707
+  OAuth2_IdentityAssertion --> RFC8725
+  OAuth2_IdentityAssertion --> RFC9396
+  OAuth2_IdentityAssertion --> RFC9493
+  OAuth2_IdentityAssertion --> OAuth2_IdentityChaining
+
   OAuth2_AIAgents --> RFC6749
-  OAuth2_AIAgents --> RFC8693
   OAuth2_AIAgents --> RFC7519
   OAuth2_AIAgents --> RFC7636
+  OAuth2_AIAgents --> RFC8693
   OAuth2_AIAgents --> RFC9068
 
   %% ---- Edges: OIDC depending on OAuth / JWT ----
@@ -345,9 +466,6 @@ graph LR
   OIDC_RISC_Events --> OIDC_RISC_Profile
   OIDC_RISC_Events --> RFC8417
 
-  RISC_UseCases --> OIDC_RISC_Spec
-  RISC_UseCases --> OIDC_RISC_Profile
-
   OID4VCI --> RFC6749
   OID4VCI --> RFC6750
   OID4VCI --> RFC7515
@@ -458,8 +576,14 @@ graph LR
   %% ---- Edges: UMA depending on OAuth / JWT ----
   UMA_Grant --> RFC6749
   UMA_Grant --> RFC6750
+  UMA_Grant --> RFC7591
+  UMA_Grant --> RFC8414
+  UMA_Grant --> UMA_FedAuthz
   UMA_FedAuthz --> RFC6749
   UMA_FedAuthz --> RFC6750
+  UMA_FedAuthz --> RFC7591
+  UMA_FedAuthz --> RFC7662
+  UMA_FedAuthz --> RFC8414
   UMA_FedAuthz --> UMA_Grant
 
   %% ---- Clickable links for each node ----
@@ -507,7 +631,7 @@ graph LR
   click RFC9635 "https://datatracker.ietf.org/doc/html/rfc9635" "Grant Negotiation and Authorization Protocol (GNAP) (RFC 9635)"
   click RFC9470 "https://datatracker.ietf.org/doc/html/rfc9470" "OAuth 2.0 Step Up Authentication Challenge Protocol (RFC 9470)"
   click OAuth2_PoPArch "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-pop-architecture-08" "OAuth 2.0 Proof-of-Possession (PoP) Security Architecture (Draft)"
-  click OAuth2_PoPKeyDist "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-pop-key-distribution-02" "OAuth 2.0 Proof-of-Possession: Authorization Server to Client Key Distribution (Draft)"
+  click OAuth2_PoPKeyDist "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-pop-key-distribution-07" "OAuth 2.0 Proof-of-Possession: Authorization Server to Client Key Distribution (Draft)"
   click OAuth2_SignedHTTP "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-signed-http-request-03" "A Method for Signing HTTP Requests for OAuth (Draft)"
   click RFC9200 "https://datatracker.ietf.org/doc/html/rfc9200" "ACE-OAuth Framework for Constrained Environments (RFC 9200)"
   click RFC9201 "https://datatracker.ietf.org/doc/html/rfc9201" "Additional OAuth Parameters for ACE (RFC 9201)"
