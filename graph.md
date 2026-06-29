@@ -1,5 +1,9 @@
 # OpenID Connect and OAuth Specification Graph
 
+**Edge legend (prototype):**
+solid arrows (`-->`) are **normative** references;
+dotted arrows (`-.->`) are **informative** references.
+
 ```mermaid
 graph LR
 
@@ -588,6 +592,16 @@ graph LR
   UMA_FedAuthz --> RFC7662
   UMA_FedAuthz --> RFC8414
   UMA_FedAuthz --> UMA_Grant
+
+  %% ---- Edges: informative references (dotted, prototype) ----
+  %% Solid arrows above are normative. These dotted edges are foundational
+  %% "builds upon" links that strict normative-only validation excluded —
+  %% a representative handful, not the complete informative set.
+  RFC6750 -.-> RFC6749
+  RFC9068 -.-> RFC6750
+  RFC7521 -.-> RFC6749
+  OAuth2_1 -.-> RFC7636
+  RFC8252 -.-> RFC7636
 
   %% ---- Clickable links for each node ----
   click RFC7033 "https://datatracker.ietf.org/doc/html/rfc7033" "WebFinger (RFC 7033)"
