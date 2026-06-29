@@ -55,8 +55,8 @@ graph LR
     RFC8628["OAuth 2.0 Device Authorization Grant (RFC 8628)"]
     RFC8935["Push-Based Security Event Token (SET) Delivery Using HTTP (RFC 8935)"]
     RFC8936["Poll-Based Security Event Token (SET) Delivery Using HTTP (RFC 8936)"]
-    SET_StreamMgmt["Management API for SET Event Streams"]
-    RISC_UseCases["Security Events RISC Use Cases"]
+    SET_StreamMgmt["Management API for SET Event Streams (Draft)"]
+    RISC_UseCases["Security Events RISC Use Cases (Draft)"]
     RFC9493["Subject Identifiers for Security Event Tokens (RFC 9493)"]
     RFC8693["OAuth 2.0 Token Exchange (RFC 8693)"]
     RFC8705["OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens (RFC 8705)"]
@@ -359,7 +359,7 @@ graph LR
   click RFC7033 "https://datatracker.ietf.org/doc/html/rfc7033" "WebFinger (RFC 7033)"
 
   click RFC6749 "https://datatracker.ietf.org/doc/html/rfc6749" "OAuth 2.0 Authorization Framework (RFC 6749)"
-  click OAuth2_1 "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1" "OAuth 2.1 Authorization Framework (Draft)"
+  click OAuth2_1 "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-15" "OAuth 2.1 Authorization Framework (Draft)"
   click RFC6750 "https://datatracker.ietf.org/doc/html/rfc6750" "Bearer Token Usage (RFC 6750)"
   click RFC6755 "https://datatracker.ietf.org/doc/html/rfc6755" "An IETF URN Sub-Namespace for OAuth (RFC 6755)"
   click RFC6819 "https://datatracker.ietf.org/doc/html/rfc6819" "OAuth 2.0 Threat Model and Security Considerations (RFC 6819)"
@@ -368,7 +368,7 @@ graph LR
   click RFC7522 "https://datatracker.ietf.org/doc/html/rfc7522" "SAML 2.0 Profile for OAuth 2.0 (RFC 7522)"
   click RFC7523 "https://datatracker.ietf.org/doc/html/rfc7523" "JWT Profile for OAuth 2.0 Client Authentication and Authorization Grants (RFC 7523)"
   click OAuth2_Kerberos "https://datatracker.ietf.org/doc/html/draft-hardjono-oauth-kerberos-01" "Kerberos V5 Profile for OAuth 2.0 (Draft)"
-  click RFC7636 "https://datatracker.ietf.org/doc/html/rfc7636" "PKCE (RFC 7636)"
+  click RFC7636 "https://datatracker.ietf.org/doc/html/rfc7636" "PKCE for OAuth 2.0 (RFC 7636)"
   click RFC7628 "https://datatracker.ietf.org/doc/html/rfc7628" "SASL OAuth Mechanisms (RFC 7628)"
   click RFC7591 "https://datatracker.ietf.org/doc/html/rfc7591" "Dynamic Client Registration (RFC 7591)"
   click RFC7592 "https://datatracker.ietf.org/doc/html/rfc7592" "Dynamic Client Registration Management (RFC 7592)"
@@ -383,7 +383,7 @@ graph LR
   click RFC8628 "https://datatracker.ietf.org/doc/html/rfc8628" "OAuth 2.0 Device Authorization Grant (RFC 8628)"
   click RFC8935 "https://datatracker.ietf.org/doc/html/rfc8935" "Push-Based Security Event Token (SET) Delivery Using HTTP (RFC 8935)"
   click RFC8936 "https://datatracker.ietf.org/doc/html/rfc8936" "Poll-Based Security Event Token (SET) Delivery Using HTTP (RFC 8936)"
-  click SET_StreamMgmt "https://datatracker.ietf.org/doc/html/draft-scurtescu-secevent-simple-control-plane" "Management API for SET Event Streams (Draft)"
+  click SET_StreamMgmt "https://datatracker.ietf.org/doc/html/draft-scurtescu-secevent-event-stream-mgmt-api-00" "Management API for SET Event Streams (Draft)"
   click RISC_UseCases "https://datatracker.ietf.org/doc/html/draft-scurtescu-secevent-risc-use-cases-00" "Security Events RISC Use Cases (Draft)"
   click RFC9493 "https://datatracker.ietf.org/doc/html/rfc9493" "Subject Identifiers for Security Event Tokens (RFC 9493)"
   click RFC8693 "https://datatracker.ietf.org/doc/html/rfc8693" "OAuth 2.0 Token Exchange (RFC 8693)"
@@ -394,7 +394,7 @@ graph LR
   click OAuth2_JARM "https://openid.net/specs/oauth-v2-jarm-final.html" "JWT Secured Authorization Response Mode for OAuth 2.0 (JARM)"
   click RFC9207 "https://datatracker.ietf.org/doc/html/rfc9207" "OAuth 2.0 Authorization Server Issuer Identification (RFC 9207)"
   click OAuth2_MixUpMit "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-mix-up-mitigation-01" "OAuth 2.0 Mix-Up Mitigation (Draft)"
-  click OAuth2_IncrAuthz "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-incremental-authz" "OAuth 2.0 Incremental Authorization (Draft)"
+  click OAuth2_IncrAuthz "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-incremental-authz-04" "OAuth 2.0 Incremental Authorization (Draft)"
   click RFC9396 "https://datatracker.ietf.org/doc/html/rfc9396" "OAuth 2.0 Rich Authorization Requests (RFC 9396)"
   click RFC9449 "https://datatracker.ietf.org/doc/html/rfc9449" "OAuth 2.0 Demonstrating Proof of Possession (RFC 9449)"
   click RFC9635 "https://datatracker.ietf.org/doc/html/rfc9635" "Grant Negotiation and Authorization Protocol (GNAP) (RFC 9635)"
@@ -407,9 +407,9 @@ graph LR
   click RFC9700 "https://datatracker.ietf.org/doc/html/rfc9700" "OAuth 2.0 Security Best Current Practice (RFC 9700)"
   click OAuth2_MultiResp "https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html" "OAuth 2.0 Multiple Response Type Encoding Practices"
   click OAuth2_FormPost "https://openid.net/specs/oauth-v2-form-post-response-mode-1_0.html" "OAuth 2.0 Form Post Response Mode"
-  click OAuth2_AttestAuth "https://datatracker.ietf.org/doc/draft-ietf-oauth-attestation-based-client-auth/" "OAuth 2.0 Attestation-Based Client Authentication (Draft)"
-  click OAuth2_BrowserApps "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps" "OAuth 2.0 for Browser-Based Applications (Draft)"
-  click OAuth2_JWTState "https://datatracker.ietf.org/doc/draft-bradley-oauth-jwt-encoded-state/" "Encoding claims in the OAuth 2 state parameter using a JWT (Draft)"
+  click OAuth2_AttestAuth "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-attestation-based-client-auth-09" "OAuth 2.0 Attestation-Based Client Authentication (Draft)"
+  click OAuth2_BrowserApps "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-26" "OAuth 2.0 for Browser-Based Applications (Draft)"
+  click OAuth2_JWTState "https://datatracker.ietf.org/doc/html/draft-bradley-oauth-jwt-encoded-state-09" "Encoding claims in the OAuth 2 state parameter using a JWT (Draft)"
   click OAuth2_TokenBinding "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-token-binding-08" "OAuth 2.0 Token Binding (Draft)"
   click UMA_Profile "https://datatracker.ietf.org/doc/html/draft-hardjono-oauth-umacore-14" "User-Managed Access (UMA) Profile of OAuth 2.0 (Draft)"
   click OAuth2_IdentityChaining "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-identity-chaining-16" "OAuth Identity and Authorization Chaining Across Domains (Draft)"
@@ -428,7 +428,7 @@ graph LR
   click RFC9068 "https://datatracker.ietf.org/doc/html/rfc9068" "JWT Profile for OAuth 2.0 Access Tokens (RFC 9068)"
   click RFC9728 "https://datatracker.ietf.org/doc/html/rfc9728" "JWT Profile for OAuth 2.0 Authorization Server Issuer Identification (RFC 9728)"
   click RFC9901 "https://datatracker.ietf.org/doc/html/rfc9901" "Selective Disclosure for JSON Web Tokens (RFC 9901)"
-  click SDJWT_VC "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-sd-jwt-vc" "SD-JWT-based Verifiable Credentials (Draft)"
+  click SDJWT_VC "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-sd-jwt-vc-16" "SD-JWT-based Verifiable Credentials (Draft)"
 
   click OIDC_Core "https://openid.net/specs/openid-connect-core-1_0.html" "OpenID Connect Core 1.0"
   click OIDC_Discovery "https://openid.net/specs/openid-connect-discovery-1_0.html" "OpenID Connect Discovery 1.0"
