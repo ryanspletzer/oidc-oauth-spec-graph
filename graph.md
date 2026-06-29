@@ -85,7 +85,8 @@ graph LR
     OAuth2_TokenBinding["OAuth 2.0 Token Binding (Draft)"]
     UMA_Profile["User-Managed Access (UMA) Profile of OAuth 2.0 (Draft)"]
     OAuth2_IdentityChaining["OAuth Identity and Authorization Chaining Across Domains (Draft)"]
-    OAuth2_IdentityAssertion["Identity Assertion Authorization Grant (Draft)"]
+    OAuth2_IdentityAssertion["Identity Assertion JWT Authorization Grant (Draft)"]
+    OAuth2_AIAgents["OAuth 2.0 On-Behalf-Of User Authorization for AI Agents (Draft)"]
   end
 
   %% --- JOSE / JWT ---
@@ -217,6 +218,11 @@ graph LR
   OAuth2_IdentityAssertion --> RFC8693
   OAuth2_IdentityAssertion --> RFC7523
   OAuth2_IdentityAssertion --> RFC7519
+  OAuth2_AIAgents --> RFC6749
+  OAuth2_AIAgents --> RFC8693
+  OAuth2_AIAgents --> RFC7519
+  OAuth2_AIAgents --> RFC7636
+  OAuth2_AIAgents --> RFC9068
 
   %% ---- Edges: OIDC depending on OAuth / JWT ----
   OIDC_Core --> RFC6749
@@ -406,8 +412,9 @@ graph LR
   click OAuth2_JWTState "https://datatracker.ietf.org/doc/draft-bradley-oauth-jwt-encoded-state/" "Encoding claims in the OAuth 2 state parameter using a JWT (Draft)"
   click OAuth2_TokenBinding "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-token-binding-08" "OAuth 2.0 Token Binding (Draft)"
   click UMA_Profile "https://datatracker.ietf.org/doc/html/draft-hardjono-oauth-umacore-14" "User-Managed Access (UMA) Profile of OAuth 2.0 (Draft)"
-  click OAuth2_IdentityChaining "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-identity-chaining-06" "OAuth Identity and Authorization Chaining Across Domains (Draft)"
-  click OAuth2_IdentityAssertion "https://datatracker.ietf.org/doc/html/draft-parecki-oauth-identity-assertion-authz-grant-05" "Identity Assertion Authorization Grant (Draft)"
+  click OAuth2_IdentityChaining "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-identity-chaining-16" "OAuth Identity and Authorization Chaining Across Domains (Draft)"
+  click OAuth2_IdentityAssertion "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-identity-assertion-authz-grant-04" "Identity Assertion JWT Authorization Grant (Draft)"
+  click OAuth2_AIAgents "https://datatracker.ietf.org/doc/html/draft-oauth-ai-agents-on-behalf-of-user-02" "OAuth 2.0 On-Behalf-Of User Authorization for AI Agents (Draft)"
 
   click RFC7515 "https://datatracker.ietf.org/doc/html/rfc7515" "JSON Web Signature (JWS) (RFC 7515)"
   click RFC7516 "https://datatracker.ietf.org/doc/html/rfc7516" "JSON Web Encryption (JWE) (RFC 7516)"
