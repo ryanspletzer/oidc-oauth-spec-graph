@@ -98,10 +98,10 @@ graph LR
     RFC7519["JSON Web Token (JWT) (RFC 7519)"]
     RFC7800["Proof-of-Possession Key Semantics for JWTs (RFC 7800)"]
     RFC8176["Authentication Method Reference Values (RFC 8176)"]
+    RFC7638["JSON Web Key (JWK) Thumbprint (RFC 7638)"]
     RFC9278["JWK Thumbprint URI (RFC 9278)"]
     RFC8725["JSON Web Token Best Current Practices (RFC 8725)"]
     RFC9068["JWT Profile for OAuth 2.0 Access Tokens (RFC 9068)"]
-    RFC9728["JWT Profile for OAuth 2.0 Authorization Server Issuer Identification (RFC 9728)"]
     RFC9901["Selective Disclosure for JSON Web Tokens (RFC 9901)"]
     SDJWT_VC["SD-JWT-based Verifiable Credentials (Draft)"]
   end
@@ -109,6 +109,7 @@ graph LR
   %% --- Discovery / Metadata ---
   subgraph Discovery_Metadata
     RFC7033["WebFinger (RFC 7033)"]
+    RFC9728["OAuth 2.0 Protected Resource Metadata (RFC 9728)"]
   end
 
   %% --- UMA (User-Managed Access) ---
@@ -312,34 +313,47 @@ graph LR
   %% ---- Edges: JWT depending on JOSE ----
   RFC7519 --> RFC7515
   RFC7519 --> RFC7516
-  RFC7519 --> RFC7517
   RFC7519 --> RFC7518
 
   RFC8725 --> RFC7519
   RFC8725 --> RFC7515
   RFC8725 --> RFC7516
+  RFC8725 --> RFC7518
 
   RFC7800 --> RFC7519
   RFC7800 --> RFC7517
   RFC7800 --> RFC7516
 
   RFC8176 --> RFC7519
+  RFC8176 --> RFC6749
+  RFC8176 --> OIDC_Core
 
-  RFC9278 --> RFC7517
+  RFC7638 --> RFC7515
+  RFC7638 --> RFC7517
+  RFC7638 --> RFC7518
+  RFC9278 --> RFC7638
 
   %% ---- Edges: newer JWT/OAuth profile referencing others ----
   RFC9068 --> RFC6749
-  RFC9068 --> RFC6750
   RFC9068 --> RFC7519
+  RFC9068 --> RFC7515
+  RFC9068 --> RFC7518
+  RFC9068 --> RFC8414
+  RFC9068 --> RFC8693
+  RFC9068 --> RFC8707
+  RFC9068 --> RFC8725
   RFC9068 --> OIDC_Core
   RFC9068 --> OIDC_Discovery
 
   RFC9728 --> RFC6749
+  RFC9728 --> RFC6750
   RFC9728 --> RFC8414
   RFC9728 --> RFC7519
 
   RFC9901 --> RFC7519
   RFC9901 --> RFC7515
+  RFC9901 --> RFC7516
+  RFC9901 --> RFC7800
   RFC9901 --> RFC8725
 
   SDJWT_VC --> RFC9901
@@ -423,10 +437,11 @@ graph LR
   click RFC7519 "https://datatracker.ietf.org/doc/html/rfc7519" "JSON Web Token (JWT) (RFC 7519)"
   click RFC7800 "https://datatracker.ietf.org/doc/html/rfc7800" "Proof-of-Possession Key Semantics for JWTs (RFC 7800)"
   click RFC8176 "https://datatracker.ietf.org/doc/html/rfc8176" "Authentication Method Reference Values (RFC 8176)"
+  click RFC7638 "https://datatracker.ietf.org/doc/html/rfc7638" "JSON Web Key (JWK) Thumbprint (RFC 7638)"
   click RFC8725 "https://datatracker.ietf.org/doc/html/rfc8725" "JSON Web Token Best Current Practices (RFC 8725)"
   click RFC9278 "https://datatracker.ietf.org/doc/html/rfc9278" "JWK Thumbprint URI (RFC 9278)"
   click RFC9068 "https://datatracker.ietf.org/doc/html/rfc9068" "JWT Profile for OAuth 2.0 Access Tokens (RFC 9068)"
-  click RFC9728 "https://datatracker.ietf.org/doc/html/rfc9728" "JWT Profile for OAuth 2.0 Authorization Server Issuer Identification (RFC 9728)"
+  click RFC9728 "https://datatracker.ietf.org/doc/html/rfc9728" "OAuth 2.0 Protected Resource Metadata (RFC 9728)"
   click RFC9901 "https://datatracker.ietf.org/doc/html/rfc9901" "Selective Disclosure for JSON Web Tokens (RFC 9901)"
   click SDJWT_VC "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-sd-jwt-vc-16" "SD-JWT-based Verifiable Credentials (Draft)"
 

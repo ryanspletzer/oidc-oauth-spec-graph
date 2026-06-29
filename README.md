@@ -30,6 +30,7 @@ Each node in the graph is clickable and links directly to the official specifica
 ### Discovery and Metadata
 
 - **RFC 7033** - WebFinger: Protocol for discovering information about people and resources, used by OpenID Connect Discovery
+- **RFC 9728** - OAuth 2.0 Protected Resource Metadata: Defines a metadata document that lets OAuth 2.0 protected resources (resource servers) publish their configuration for clients and authorization servers to discover, the resource-server counterpart to RFC 8414 authorization server metadata
 
 ### OAuth 2.0 Foundation
 
@@ -101,9 +102,9 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 7800** - Proof-of-Possession Key Semantics for JWTs: Defines how to declare in a JWT that the presenter possesses a particular proof-of-possession key and how recipients can cryptographically confirm possession
 - **RFC 8176** - Authentication Method Reference Values: Establishes a registry for "amr" (Authentication Methods References) claim values and defines standard identifiers for authentication methods such as biometrics, passwords, OTP, multi-factor authentication, and hardware keys
 - **RFC 8725** - JSON Web Token Best Current Practices: Security best practices and recommendations for JWT implementations
+- **RFC 7638** - JSON Web Key (JWK) Thumbprint: Defines a deterministic method to compute a hash (thumbprint) of a JWK that serves as a canonical key identifier, the basis for the RFC 9278 thumbprint URI form
 - **RFC 9278** - JWK Thumbprint URI: Defines a URI format for representing JWK Thumbprint values, enabling JWK Thumbprints to be used as key identifiers in contexts requiring URIs (e.g., as subject identifiers in Self-Issued OpenID Provider v2)
 - **RFC 9068** - JWT Profile for OAuth 2.0 Access Tokens: Standardizes JWT-based access tokens
-- **RFC 9728** - JWT Profile for OAuth 2.0 Authorization Server Issuer Identification: Defines how to prevent mix-up attacks by including issuer identification in JWT responses
 - **RFC 9901** - Selective Disclosure for JSON Web Tokens (SD-JWT): Defines a mechanism for selective disclosure of JWT claims enabling minimal disclosure and privacy-preserving credential presentations
 - **SD-JWT-based Verifiable Credentials (SD-JWT VC) (Draft)**: Defines a credential format for Verifiable Credentials using SD-JWT, enabling selective disclosure of identity claims while providing a standardized data model with Type Metadata for credential display and validation
 
