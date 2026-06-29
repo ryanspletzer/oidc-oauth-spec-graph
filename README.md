@@ -41,9 +41,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 6819** - OAuth 2.0 Threat Model and Security Considerations: Comprehensive analysis of OAuth 2.0 security threats and countermeasures
 - **RFC 7009** - OAuth 2.0 Token Revocation: Defines a mechanism for clients to notify authorization servers that a token is no longer needed
 - **RFC 7521** - Assertion Framework for OAuth 2.0 Client Authentication and Authorization Grants: Common framework for using assertions with OAuth 2.0
-- **RFC 7522** - SAML 2.0 Profile for OAuth 2.0: Defines how SAML 2.0 assertions can be used for client authentication and authorization grants
 - **RFC 7523** - JWT Profile for OAuth 2.0 Client Authentication and Authorization Grants: Defines how JWTs can be used for client authentication and authorization grants
-- **Kerberos V5 Profile for OAuth 2.0 (Draft)**: Defines how Kerberos V5 tickets can be used for client authentication and authorization grants in OAuth 2.0
 - **RFC 7636** - PKCE: Proof Key for Code Exchange, security extension for public clients
 - **RFC 7628** - SASL OAuth Mechanisms: Defines SASL mechanisms (OAUTHBEARER and OAUTH10A) for using OAuth in non-HTTP-based protocols like IMAP and SMTP
 - **RFC 7591** - Dynamic Client Registration: Allows clients to register themselves with authorization servers
@@ -54,13 +52,11 @@ Each node in the graph is clickable and links directly to the official specifica
 - **RFC 9701** - JWT Response for OAuth Token Introspection: Extends the token introspection endpoint with the capability to return responses as signed and optionally encrypted JWTs, providing stronger assurance for resource servers
 - **RFC 8252** - OAuth 2.0 for Native Apps: Best practices for OAuth 2.0 in native applications, including mobile and desktop apps
 - **RFC 8414** - Authorization Server Metadata: Standardizes discovery of authorization server capabilities
-- **OAuth 2.0 Authorization Server Discovery Metadata (Draft)**: Extends RFC 8414 with additional metadata for authorization server discovery and capabilities advertisement
 - **RFC 8417** - Security Event Token (SET): Defines a JWT-based data structure for representing security and identity-related events, such as token revocations, logout events, and state changes
 - **RFC 8628** - OAuth 2.0 Device Authorization Grant: Defines an OAuth grant type for browserless and input-constrained devices
 - **RFC 8935** - Push-Based Security Event Token (SET) Delivery Using HTTP: Defines how SETs can be delivered to recipients using HTTP POST over TLS for push-based event distribution
 - **RFC 8936** - Poll-Based Security Event Token (SET) Delivery Using HTTP: Defines how recipients can poll for SETs using HTTP POST, providing an alternative delivery method where recipients initiate requests to check for and retrieve security events
 - **Management API for SET Event Streams (Draft)** - Defines a simple control plane for configuring Security Event Token transmitters and recipients, including creating, pausing, and deleting event streams that use the delivery models from RFC 8935 and RFC 8936 while relying on the SET structure defined in RFC 8417
-- **Security Events RISC Use Cases (Draft)** - Illustrates practical adoption patterns for the RISC profile by mapping common account security scenarios to the SET framework in RFC 8417 and its HTTP delivery mechanisms in RFC 8935 and RFC 8936, highlighting coordination needs between transmitters and recipients
 - **RFC 9493** - Subject Identifiers for Security Event Tokens: Formalizes Subject Identifiers as JSON objects for identifying subjects in SETs and JWTs, defining identifier formats (email, phone, issuer/subject, opaque, account, DID, URI, aliases) and the JWT "sub_id" claim
 - **RFC 8693** - OAuth 2.0 Token Exchange: Defines a protocol for exchanging security tokens, enabling delegation and impersonation scenarios
 - **RFC 8705** - OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens: Defines mutual TLS for client authentication and methods for binding access tokens to client certificates
@@ -87,7 +83,7 @@ Each node in the graph is clickable and links directly to the official specifica
 - **OAuth 2.0 for Browser-Based Applications (Draft)**: Best practices and security considerations for OAuth 2.0 applications running entirely in the browser, including guidance on using authorization code flow with PKCE
 - **Encoding claims in the OAuth 2 state parameter using a JWT (Draft)**: Defines how to encode claims in the OAuth 2.0 state parameter as a JWT, enabling secure passing of additional information between authorization request and response
 - **OAuth 2.0 Token Binding (Draft)**: Defines how to apply Token Binding protocol to OAuth 2.0, enabling cryptographic binding of security tokens to TLS connections to prevent token export and replay attacks
-- **User-Managed Access (UMA) Profile of OAuth 2.0 (Draft)**: Defines an OAuth-based access management protocol that enables resource owners to control access to their protected resources by creating authorization policies at an authorization server
+- **User-Managed Access (UMA) Profile of OAuth 2.0**: Kantara UMA Core 1.0.1 deliverable defining an OAuth-based access management protocol that enables resource owners to control access to their protected resources by creating authorization policies at an authorization server
 - **OAuth Identity and Authorization Chaining Across Domains (Draft)**: Defines a mechanism for chaining OAuth 2.0 authorization flows across multiple authorization servers in different domains, enabling delegation scenarios where a user authorizes access to resources across domain boundaries using token exchange and nested authorization flows
 - **Identity Assertion JWT Authorization Grant (Draft)**: Enables applications to obtain OAuth 2.0 access tokens by leveraging identity assertions (such as OpenID Connect ID Tokens or SAML assertions) through a coordinated enterprise identity provider, combining Token Exchange with JWT-based authorization grants to facilitate cross-application access management
 - **OAuth 2.0 On-Behalf-Of User Authorization for AI Agents (Draft)**: Extends OAuth 2.0 to let AI agents obtain access tokens to act on behalf of users, introducing the `requested_actor` authorization parameter and the `actor_token` token-endpoint parameter to authenticate the agent and document the delegation chain in access token claims
