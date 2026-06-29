@@ -30,13 +30,25 @@ must stay in sync:
    (`OpenID_Connect`, `OAuth_2_0_RFCs`, `JOSE_JWT`, `Discovery_Metadata`, `UMA`).
 2. **Dependency edges** (`A --> B`, meaning "A **normatively** references /
    builds upon B") under the matching `%% ---- Edges ...` comment block.
-   Edges track **normative** references only — not informative ones. Verify
-   against the IETF datatracker structured references view
+   Edges track **normative** references only — not informative ones — and aim
+   for **completeness**: draw *every* normative reference from A to a spec that
+   is already a node, not just the most salient one. Verify against the IETF
+   datatracker structured references view
    (`https://datatracker.ietf.org/doc/<rfc-or-draft>/references/`), which
-   separates normative from informative, rather than scraping the prose.
+   separates normative from informative, rather than scraping the prose. For
+   `openid.net` specs (no datatracker view) use the spec's GitHub source
+   markdown, where mmark markers encode reference type: `[@!ref]` is normative,
+   `[@ref]` / `[@?ref]` is informative.
 3. **Clickable link** in the `click <NodeId> "<url>" "<tooltip>"` section,
    with a tooltip that matches the node label.
 4. **README** bullet under the matching `### Specification Categories` heading.
+
+Edges are **normative-only** but otherwise **complete**, which has two
+consequences worth stating: the graph is intentionally **not a DAG** — when two
+specs reference each other normatively, both edges are drawn, producing cycles —
+and the resulting high edge density is a **deliberate goal** (the graph exists
+partly to show how interconnected the OAuth/OIDC ecosystem is). Do not prune
+edges for readability, and do not "simplify" cycles.
 
 Node id conventions:
 
@@ -55,9 +67,19 @@ URL conventions:
   individual (`draft-<author>-...`) draft.
 - OpenID Foundation specs → `https://openid.net/specs/...`.
 
+Node inclusion / removal:
+
+- Do **not** add a node for an IETF draft that was published as an RFC — use the
+  RFC node (e.g. `draft-ietf-oauth-discovery` is RFC 8414, not a separate node).
+- Remove a node that is superseded or carries no references of its own; a real
+  spec that only references out-of-scope specs may stay as an orphan (no edges).
+
 After editing, sanity-check that the node count equals the click-link count
 (every node needs exactly one `click`), and that no edge references an
-undefined node id.
+undefined node id — **except** the four intentional ACE edges
+(`RFC9200`/`RFC9201` → `RFC7252`, `RFC8152`, `RFC8392`, `RFC8747`), which target
+constrained-environment specs (CoAP, COSE, CWT, PoP-for-CWT) deliberately left
+out of scope. Treat those four as an allowlisted exception; do not remove them.
 
 ## Adding a spec
 
