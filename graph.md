@@ -164,9 +164,6 @@ graph LR
   RISC_UseCases --> RFC8417
   RISC_UseCases --> RFC8935
   RISC_UseCases --> RFC8936
-  OIDC_RISC_Spec --> RFC8417
-  OIDC_RISC_Spec --> RFC8935
-  OIDC_RISC_Spec --> RFC8936
   RFC8693 --> RFC6749
   RFC8693 --> RFC6750
   RFC8705 --> RFC6749
@@ -227,74 +224,170 @@ graph LR
 
   %% ---- Edges: OIDC depending on OAuth / JWT ----
   OIDC_Core --> RFC6749
+  OIDC_Core --> RFC6750
+  OIDC_Core --> RFC7515
+  OIDC_Core --> RFC7516
+  OIDC_Core --> RFC7518
   OIDC_Core --> RFC7519
+  OIDC_Core --> RFC8176
+  OIDC_Core --> OAuth2_MultiResp
 
   OIDC_Discovery --> RFC6749
-  OIDC_Discovery --> RFC8414
   OIDC_Discovery --> RFC7033
+  OIDC_Discovery --> RFC7515
+  OIDC_Discovery --> RFC7517
+  OIDC_Discovery --> RFC7518
+  OIDC_Discovery --> RFC7519
 
   OIDC_Reg --> RFC6749
+  OIDC_Reg --> RFC6750
+  OIDC_Reg --> RFC7515
+  OIDC_Reg --> RFC7516
+  OIDC_Reg --> RFC7517
+  OIDC_Reg --> RFC7518
+  OIDC_Reg --> RFC7519
   %% RFC 7591 explicitly references OIDC Dynamic Client Registration
   RFC7591 --> OIDC_Reg
 
   %% ---- Edges: OIDC internal references ----
   OIDC_Core --> OIDC_Discovery
   OIDC_Core --> OIDC_Reg
+
+  OIDC_Discovery --> OIDC_Core
+
+  OIDC_Reg --> OIDC_Core
+  OIDC_Reg --> OIDC_Discovery
+
   OIDC_Session --> OIDC_Core
+  OIDC_Session --> OIDC_Discovery
+  OIDC_Session --> OIDC_FrontLogout
+  OIDC_Session --> OIDC_BackLogout
+  OIDC_Session --> OIDC_RPLogout
+  OIDC_Session --> RFC6749
+
   OIDC_FrontLogout --> OIDC_Core
+  OIDC_FrontLogout --> OIDC_Discovery
+  OIDC_FrontLogout --> OIDC_Reg
   OIDC_FrontLogout --> OIDC_Session
+  OIDC_FrontLogout --> OIDC_BackLogout
+  OIDC_FrontLogout --> OIDC_RPLogout
+  OIDC_FrontLogout --> RFC6749
+
   OIDC_BackLogout --> OIDC_Core
+  OIDC_BackLogout --> OIDC_Discovery
+  OIDC_BackLogout --> OIDC_Reg
   OIDC_BackLogout --> OIDC_Session
+  OIDC_BackLogout --> OIDC_FrontLogout
+  OIDC_BackLogout --> OIDC_RPLogout
+  OIDC_BackLogout --> RFC6749
+  OIDC_BackLogout --> RFC7519
+
   OIDC_RPLogout --> OIDC_Core
+  OIDC_RPLogout --> OIDC_Discovery
+  OIDC_RPLogout --> OIDC_Reg
   OIDC_RPLogout --> OIDC_Session
+  OIDC_RPLogout --> OIDC_FrontLogout
+  OIDC_RPLogout --> OIDC_BackLogout
+  OIDC_RPLogout --> RFC6749
+
   OIDC_TokenBound --> OIDC_Core
-  OIDC_TokenBound --> OAuth2_TokenBinding
+  OIDC_TokenBound --> OIDC_Discovery
+  OIDC_TokenBound --> OIDC_Reg
+  OIDC_TokenBound --> RFC6749
+  OIDC_TokenBound --> RFC7519
+  OIDC_TokenBound --> RFC7800
+  OIDC_TokenBound --> RFC8414
+
   OIDC_IDA --> OIDC_Core
-  OIDC_IDA_Schema --> OIDC_IDA
-  OIDC_IDA_Claims --> OIDC_IDA
+  OIDC_IDA --> OIDC_Discovery
+  OIDC_IDA --> OIDC_IDA_Schema
+  OIDC_IDA --> OIDC_IDA_Claims
+
+  OIDC_IDA_Schema --> OIDC_Core
+  OIDC_IDA_Schema --> RFC7519
+
   OIDC_IDA_Claims --> OIDC_Core
+  OIDC_IDA_Claims --> OIDC_IDA
+  OIDC_IDA_Claims --> RFC7519
+
   OIDC_UnmetAuthReq --> OIDC_Core
+  OIDC_UnmetAuthReq --> RFC6749
+
   OIDC_PromptCreate --> OIDC_Core
+  OIDC_PromptCreate --> OIDC_Discovery
+  OIDC_PromptCreate --> RFC6749
+  OIDC_PromptCreate --> RFC9101
+
+  OIDC_SSF --> RFC6749
+  OIDC_SSF --> RFC7519
   OIDC_SSF --> RFC8417
-  OIDC_SSF --> OIDC_Core
+  OIDC_SSF --> RFC8935
+  OIDC_SSF --> RFC8936
+  OIDC_SSF --> RFC9493
+
+  OIDC_CAEP --> OIDC_Core
   OIDC_CAEP --> OIDC_SSF
-  OIDC_CAEP --> RFC8417
+
+  OIDC_RISC_Spec --> RFC8417
+  OIDC_RISC_Spec --> OIDC_SSF
+  OIDC_RISC_Spec --> OIDC_CAEP
+
+  OIDC_RISC_Profile --> RFC6749
+  OIDC_RISC_Profile --> RFC6750
+  OIDC_RISC_Profile --> RFC7517
+  OIDC_RISC_Profile --> RFC7519
+  OIDC_RISC_Profile --> RFC8414
   OIDC_RISC_Profile --> RFC8417
   OIDC_RISC_Profile --> RFC8935
   OIDC_RISC_Profile --> RFC8936
-  OIDC_RISC_Profile --> OIDC_RISC_Spec
+  OIDC_RISC_Profile --> OIDC_Core
+
   OIDC_RISC_Events --> OIDC_RISC_Profile
+  OIDC_RISC_Events --> RFC8417
+
   RISC_UseCases --> OIDC_RISC_Spec
   RISC_UseCases --> OIDC_RISC_Profile
+
   OID4VCI --> RFC6749
-  OID4VCI --> RFC7519
+  OID4VCI --> RFC6750
   OID4VCI --> RFC7515
   OID4VCI --> RFC7516
   OID4VCI --> RFC7517
+  OID4VCI --> RFC7518
+  OID4VCI --> RFC7519
   OID4VCI --> RFC7591
   OID4VCI --> RFC7636
   OID4VCI --> RFC8414
+  OID4VCI --> RFC8707
+  OID4VCI --> RFC8725
   OID4VCI --> RFC9126
   OID4VCI --> RFC9396
   OID4VCI --> RFC9449
-  OID4VCI --> RFC8725
+  OID4VCI --> RFC9700
   OID4VCI --> OIDC_Core
+  OID4VCI --> SDJWT_VC
+
   OID4VP --> RFC6749
   OID4VP --> RFC7515
   OID4VP --> RFC7516
-  OID4VP --> RFC7517
+  OID4VP --> RFC7518
   OID4VP --> RFC7519
   OID4VP --> RFC7591
   OID4VP --> RFC7800
   OID4VP --> RFC8414
   OID4VP --> RFC9101
+  OID4VP --> RFC9207
+  OID4VP --> RFC9700
   OID4VP --> OAuth2_MultiResp
   OID4VP --> OIDC_Core
-  OID4VP --> OID4VCI
+  OID4VP --> SDJWT_VC
+  OID4VP --> SIOPv2
+
   SIOPv2 --> RFC6749
   SIOPv2 --> RFC7515
   SIOPv2 --> RFC7517
   SIOPv2 --> RFC7519
+  SIOPv2 --> RFC7638
   SIOPv2 --> RFC9101
   SIOPv2 --> RFC9278
   SIOPv2 --> OAuth2_MultiResp
