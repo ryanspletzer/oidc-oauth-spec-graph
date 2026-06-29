@@ -1,0 +1,6 @@
+# markdownlint-cli2 configuration
+# Each spec in README.md / graph.md is intentionally kept on a single line so
+# that adding or updating a spec produces a clean, one-line diff. Line-length
+# enforcement is therefore disabled; all other default rules apply.
+default: true
+MD013: false
