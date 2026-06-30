@@ -1,6 +1,6 @@
 # OpenID Connect and OAuth Specification Graph
 
-**Edge legend (prototype):**
+**Edge legend:**
 solid arrows (`-->`) are **normative** references;
 dotted arrows (`-.->`) are **informative** references.
 
@@ -593,15 +593,214 @@ graph LR
   UMA_FedAuthz --> RFC8414
   UMA_FedAuthz --> UMA_Grant
 
-  %% ---- Edges: informative references (dotted, prototype) ----
-  %% Solid arrows above are normative. These dotted edges are foundational
-  %% "builds upon" links that strict normative-only validation excluded —
-  %% a representative handful, not the complete informative set.
-  RFC6750 -.-> RFC6749
+  %% ---- Edges: informative references (dotted) ----
+  %% Solid arrows are normative dependencies; dotted arrows are
+  %% informative references to other tracked specs (datatracker /
+  %% openid.net informative reference sections).
+  RFC7515 -.-> RFC6749
+  RFC7517 -.-> RFC6749
+  RFC7518 -.-> RFC6749
+  RFC7519 -.-> RFC6749
+  RFC7519 -.-> RFC6755
+  RFC7800 -.-> OAuth2_PoPArch
+  RFC7800 -.-> RFC7638
+  RFC8176 -.-> RFC6819
+  RFC8176 -.-> RFC7638
+  RFC9278 -.-> RFC6755
+  RFC9278 -.-> RFC7517
+  RFC9278 -.-> RFC7519
+  RFC8725 -.-> RFC6749
+  RFC8725 -.-> RFC7517
+  RFC8725 -.-> RFC8414
+  RFC8725 -.-> RFC8417
   RFC9068 -.-> RFC6750
+  RFC9068 -.-> RFC7523
+  RFC9068 -.-> RFC7662
+  RFC9068 -.-> RFC9700
+  RFC9728 -.-> RFC7033
+  RFC9728 -.-> RFC9470
+  RFC9728 -.-> RFC9700
+  RFC9901 -.-> RFC7517
+  RFC9901 -.-> SDJWT_VC
+  OIDC_Session -.-> RFC8414
+  OIDC_FrontLogout -.-> RFC7519
+  OIDC_FrontLogout -.-> RFC7591
+  OIDC_FrontLogout -.-> RFC8414
+  OIDC_BackLogout -.-> RFC7515
+  OIDC_BackLogout -.-> RFC7591
+  OIDC_BackLogout -.-> RFC8414
+  OIDC_BackLogout -.-> RFC8417
+  OIDC_BackLogout -.-> RFC8725
+  OIDC_BackLogout -.-> RFC8935
+  OIDC_RPLogout -.-> RFC7591
+  OIDC_RPLogout -.-> RFC8414
+  RFC6750 -.-> RFC6749
+  RFC7009 -.-> RFC6819
   RFC7521 -.-> RFC6749
+  RFC7521 -.-> RFC6755
+  RFC7521 -.-> RFC7523
+  RFC7521 -.-> RFC7591
+  RFC7523 -.-> RFC6749
+  RFC7523 -.-> RFC6755
+  RFC7523 -.-> RFC7591
+  OAuth2_1 -.-> OAuth2_AttestAuth
+  OAuth2_1 -.-> OAuth2_BrowserApps
+  OAuth2_1 -.-> RFC6819
+  OAuth2_1 -.-> RFC7009
+  OAuth2_1 -.-> RFC7519
+  OAuth2_1 -.-> RFC7591
+  OAuth2_1 -.-> RFC7592
   OAuth2_1 -.-> RFC7636
+  OAuth2_1 -.-> RFC7662
+  OAuth2_1 -.-> RFC8414
+  OAuth2_1 -.-> RFC8628
+  OAuth2_1 -.-> RFC8705
+  OAuth2_1 -.-> RFC8707
+  OAuth2_1 -.-> RFC9068
+  OAuth2_1 -.-> RFC9126
+  OAuth2_1 -.-> RFC9396
+  OAuth2_1 -.-> RFC9449
+  OAuth2_1 -.-> RFC9470
+  RFC7636 -.-> RFC6819
+  RFC7628 -.-> RFC6819
+  RFC7628 -.-> RFC7033
+  RFC7591 -.-> RFC6750
+  RFC7592 -.-> RFC6819
+  OAuth2_ClientIDMeta -.-> OAuth2_AttestAuth
+  OAuth2_ClientIDMeta -.-> RFC7523
+  OAuth2_ClientIDScheme -.-> RFC9068
+  RFC7662 -.-> RFC6750
+  RFC8252 -.-> RFC6819
+  RFC8252 -.-> RFC7591
   RFC8252 -.-> RFC7636
+  RFC8414 -.-> OAuth2_MixUpMit
+  RFC8417 -.-> RFC7009
+  RFC8417 -.-> RFC8725
+  RFC8935 -.-> RFC8936
+  RFC8936 -.-> RFC6749
+  RFC8936 -.-> RFC6750
+  RFC9493 -.-> RFC7515
+  RFC8693 -.-> RFC6750
+  RFC8693 -.-> RFC6755
+  RFC8693 -.-> RFC6819
+  RFC8693 -.-> RFC7521
+  RFC8693 -.-> RFC7523
+  RFC8693 -.-> RFC8707
+  RFC8693 -.-> RFC9700
+  RFC8705 -.-> OAuth2_TokenBinding
+  RFC8705 -.-> RFC7009
+  RFC8705 -.-> RFC7518
+  RFC8707 -.-> RFC6750
+  RFC8707 -.-> RFC7519
+  RFC8707 -.-> RFC7662
+  RFC8707 -.-> RFC9101
+  RFC9101 -.-> RFC6819
+  RFC9101 -.-> RFC7523
+  RFC9101 -.-> RFC7591
+  RFC9101 -.-> RFC8725
+  RFC9126 -.-> OAuth2_1
+  RFC9126 -.-> RFC6755
+  RFC9126 -.-> RFC7517
+  RFC9126 -.-> RFC7519
+  RFC9126 -.-> RFC7523
+  RFC9126 -.-> RFC7591
+  RFC9126 -.-> RFC7636
+  RFC9126 -.-> RFC8252
+  RFC9126 -.-> RFC8705
+  RFC9126 -.-> RFC8707
+  RFC9126 -.-> RFC9700
+  OAuth2_JARM -.-> OIDC_Core
+  OAuth2_JARM -.-> OIDC_Discovery
+  OAuth2_JARM -.-> OIDC_Session
+  OAuth2_JARM -.-> RFC7591
+  OAuth2_JARM -.-> RFC7636
+  OAuth2_JARM -.-> RFC8414
+  OAuth2_JARM -.-> RFC9700
+  RFC9207 -.-> RFC7519
+  RFC9207 -.-> RFC7591
+  RFC9207 -.-> RFC9101
+  RFC9207 -.-> RFC9700
+  OAuth2_MixUpMit -.-> OAuth2_JWTState
+  OAuth2_MixUpMit -.-> RFC7591
+  RFC9396 -.-> RFC6749
+  RFC9396 -.-> RFC7591
+  RFC9396 -.-> RFC9101
+  RFC9396 -.-> RFC9126
+  OAuth2_MultiResp -.-> OAuth2_FormPost
+  OAuth2_AttestAuth -.-> RFC6749
+  OAuth2_AttestAuth -.-> RFC7523
+  OAuth2_AttestAuth -.-> RFC9901
+  OAuth2_BrowserApps -.-> RFC6819
+  OAuth2_TokenBinding -.-> RFC6755
+  OAuth2_TokenBinding -.-> RFC7515
+  OAuth2_TokenBinding -.-> RFC8252
+  OAuth2_TokenBinding -.-> RFC8705
+  RFC9449 -.-> OAuth2_TokenBinding
+  RFC9449 -.-> RFC7523
+  RFC9449 -.-> RFC7591
+  RFC9449 -.-> RFC7636
+  RFC9449 -.-> RFC7662
+  RFC9449 -.-> RFC8414
+  RFC9449 -.-> RFC8705
+  RFC9449 -.-> RFC8707
+  RFC9449 -.-> RFC8725
+  RFC9449 -.-> RFC9126
+  RFC9449 -.-> RFC9700
+  RFC9635 -.-> RFC7518
+  RFC9635 -.-> RFC8707
+  RFC9635 -.-> RFC9396
+  RFC9635 -.-> RFC9700
+  RFC9470 -.-> RFC7519
+  RFC9470 -.-> RFC7662
+  RFC9470 -.-> RFC8414
+  RFC9470 -.-> RFC9068
+  RFC9470 -.-> RFC9449
+  OAuth2_PoPArch -.-> RFC6750
+  OAuth2_PoPArch -.-> RFC6819
+  OAuth2_PoPKeyDist -.-> OAuth2_PoPArch
+  OAuth2_PoPKeyDist -.-> RFC6750
+  OAuth2_PoPKeyDist -.-> RFC7521
+  OAuth2_PoPKeyDist -.-> RFC7591
+  OAuth2_PoPKeyDist -.-> RFC7636
+  OAuth2_PoPKeyDist -.-> RFC7662
+  OAuth2_PoPKeyDist -.-> RFC9200
+  RFC9200 -.-> OAuth2_PoPKeyDist
+  RFC9200 -.-> RFC6819
+  RFC9200 -.-> RFC7009
+  RFC9200 -.-> RFC7521
+  RFC9200 -.-> RFC7591
+  RFC9200 -.-> RFC8252
+  RFC9200 -.-> RFC8414
+  RFC9200 -.-> RFC8628
+  RFC9700 -.-> OAuth2_1
+  RFC9700 -.-> OAuth2_JWTState
+  RFC9700 -.-> OAuth2_TokenBinding
+  RFC9700 -.-> RFC7591
+  RFC9700 -.-> RFC7636
+  RFC9700 -.-> RFC8707
+  RFC9700 -.-> RFC9101
+  RFC9700 -.-> RFC9126
+  RFC9700 -.-> RFC9207
+  RFC9700 -.-> RFC9396
+  RFC9700 -.-> RFC9449
+  OIDC_IDA -.-> RFC7519
+  OIDC_IDA_Schema -.-> OIDC_IDA_Claims
+  OIDC_PromptCreate -.-> RFC6750
+  OIDC_TokenBound -.-> OAuth2_FormPost
+  OIDC_TokenBound -.-> OAuth2_TokenBinding
+  OIDC_TokenBound -.-> RFC7517
+  OIDC_TokenBound -.-> RFC7591
+  OAuth2_IdentityAssertion -.-> OAuth2_ClientIDMeta
+  OAuth2_IdentityAssertion -.-> RFC9068
+  OAuth2_IdentityAssertion -.-> RFC9470
+  OAuth2_IdentityAssertion -.-> RFC9728
+  OIDC_Discovery -.-> OIDC_Session
+  OIDC_Discovery -.-> RFC8414
+  OIDC_Reg -.-> OIDC_RPLogout
+  OIDC_Reg -.-> RFC7591
+  OIDC_Reg -.-> RFC7592
+  SIOPv2 -.-> RFC8252
+  SIOPv2 -.-> RFC9700
 
   %% ---- Clickable links for each node ----
   click RFC7033 "https://datatracker.ietf.org/doc/html/rfc7033" "WebFinger (RFC 7033)"
