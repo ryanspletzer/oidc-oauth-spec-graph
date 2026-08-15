@@ -73,6 +73,7 @@ graph LR
     RFC9200["ACE-OAuth Framework for Constrained Environments (RFC 9200)"]
     RFC9201["Additional OAuth Parameters for ACE (RFC 9201)"]
     RFC9700["OAuth 2.0 Security Best Current Practice (RFC 9700)"]
+    RFC10027["Best Current Practice for Security of Cross-Device Flows (RFC 10027)"]
     OAuth2_MultiResp["OAuth 2.0 Multiple Response Type Encoding Practices"]
     OAuth2_FormPost["OAuth 2.0 Form Post Response Mode"]
     OAuth2_AttestAuth["OAuth 2.0 Attestation-Based Client Authentication (Draft)"]
@@ -83,6 +84,8 @@ graph LR
     OAuth2_IdentityChaining["OAuth Identity and Authorization Chaining Across Domains (Draft)"]
     OAuth2_IdentityAssertion["Identity Assertion JWT Authorization Grant (Draft)"]
     OAuth2_AIAgents["OAuth 2.0 On-Behalf-Of User Authorization for AI Agents (Draft)"]
+    OAuth2_TransactionTokens["Transaction Tokens (Draft)"]
+    OAuth2_AAuth["AAuth - Agentic Authorization OAuth 2.1 Extension (Draft)"]
   end
 
   %% --- JOSE / JWT ---
@@ -222,7 +225,10 @@ graph LR
   OAuth2_IncrAuthz --> RFC8414
 
   RFC9396 --> RFC7519
+  RFC9396 --> RFC7662
   RFC9396 --> RFC8414
+  RFC9396 --> RFC8628
+  RFC9396 --> RFC8707
 
   RFC9449 --> RFC6749
   RFC9449 --> RFC6750
@@ -282,6 +288,13 @@ graph LR
   RFC9700 --> RFC8252
   RFC9700 --> RFC8414
   RFC9700 --> RFC8705
+
+  RFC10027 --> RFC6749
+  RFC10027 --> RFC7636
+  RFC10027 --> RFC7662
+  RFC10027 --> RFC8628
+  RFC10027 --> OIDC_SSF
+  RFC10027 --> OIDC_CAEP
 
   OAuth2_MultiResp --> RFC6749
   OAuth2_FormPost --> RFC6749
@@ -345,6 +358,20 @@ graph LR
   OAuth2_AIAgents --> RFC7636
   OAuth2_AIAgents --> RFC8693
   OAuth2_AIAgents --> RFC9068
+
+  OAuth2_TransactionTokens --> RFC6749
+  OAuth2_TransactionTokens --> RFC7515
+  OAuth2_TransactionTokens --> RFC7519
+  OAuth2_TransactionTokens --> RFC7523
+  OAuth2_TransactionTokens --> RFC7662
+  OAuth2_TransactionTokens --> RFC8417
+  OAuth2_TransactionTokens --> RFC8693
+  OAuth2_TransactionTokens --> RFC8705
+  OAuth2_TransactionTokens --> RFC9068
+  OAuth2_TransactionTokens --> OAuth2_IdentityChaining
+
+  %% OAuth2_AAuth has no normative references (RFC 6749 is cited only
+  %% informatively), so it is an intentional orphan node.
 
   %% ---- Edges: OIDC depending on OAuth / JWT ----
   OIDC_Core --> RFC6749
@@ -635,6 +662,7 @@ graph LR
   click RFC9200 "https://datatracker.ietf.org/doc/html/rfc9200" "ACE-OAuth Framework for Constrained Environments (RFC 9200)"
   click RFC9201 "https://datatracker.ietf.org/doc/html/rfc9201" "Additional OAuth Parameters for ACE (RFC 9201)"
   click RFC9700 "https://datatracker.ietf.org/doc/html/rfc9700" "OAuth 2.0 Security Best Current Practice (RFC 9700)"
+  click RFC10027 "https://datatracker.ietf.org/doc/html/rfc10027" "Best Current Practice for Security of Cross-Device Flows (RFC 10027)"
   click OAuth2_MultiResp "https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html" "OAuth 2.0 Multiple Response Type Encoding Practices"
   click OAuth2_FormPost "https://openid.net/specs/oauth-v2-form-post-response-mode-1_0.html" "OAuth 2.0 Form Post Response Mode"
   click OAuth2_AttestAuth "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-attestation-based-client-auth-09" "OAuth 2.0 Attestation-Based Client Authentication (Draft)"
@@ -645,6 +673,8 @@ graph LR
   click OAuth2_IdentityChaining "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-identity-chaining-16" "OAuth Identity and Authorization Chaining Across Domains (Draft)"
   click OAuth2_IdentityAssertion "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-identity-assertion-authz-grant-04" "Identity Assertion JWT Authorization Grant (Draft)"
   click OAuth2_AIAgents "https://datatracker.ietf.org/doc/html/draft-oauth-ai-agents-on-behalf-of-user-02" "OAuth 2.0 On-Behalf-Of User Authorization for AI Agents (Draft)"
+  click OAuth2_TransactionTokens "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-transaction-tokens-11" "Transaction Tokens (Draft)"
+  click OAuth2_AAuth "https://datatracker.ietf.org/doc/html/draft-rosenberg-oauth-aauth-01" "AAuth - Agentic Authorization OAuth 2.1 Extension (Draft)"
 
   click RFC7515 "https://datatracker.ietf.org/doc/html/rfc7515" "JSON Web Signature (JWS) (RFC 7515)"
   click RFC7516 "https://datatracker.ietf.org/doc/html/rfc7516" "JSON Web Encryption (JWE) (RFC 7516)"
