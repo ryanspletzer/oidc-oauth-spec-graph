@@ -14,12 +14,12 @@ It is documentation only — there is no build, no tests, and no application cod
 - `docs/recommended-reading-order.md` — a curated learning path
   (intentionally a subset, not an exhaustive list).
 
-## CLAUDE.md / AGENTS.md symlink pattern
+## Instruction file
 
-`AGENTS.md` is the canonical instructions file.
-`CLAUDE.md` is a symlink to it so Claude Code picks it up automatically while
-other AGENTS.md-aware tools read the same content — one file to maintain.
-Edit `AGENTS.md`; never replace the symlink with a divergent copy.
+`AGENTS.md` is the only agent-instruction file in this repo.
+Claude Code 2.1.277+ reads it natively.
+Do not add a `CLAUDE.md`:
+Claude Code would read that instead and ignore this file.
 
 ## Graph conventions
 
